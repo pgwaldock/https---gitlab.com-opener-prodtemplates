@@ -1,0 +1,173 @@
+.confirmation_holder {
+	background-color: #27363d;
+}
+.confirmation_holder .row.darkerPanel {
+	padding: 8px 16px 8px 8px;
+	margin-top: 20px;
+}
+.confirmation_holder h1 span, .docs_holder h1 span {
+	display: block;
+	font-size: 18px;
+	opacity: .5;
+}
+.confirmation_holder .row.darkerPanel h3, .dash_holder .row.darkerPanel h3 {
+	padding: 4px 0 0 0px;
+	margin-bottom: 0px;
+	font-size: 16px;
+	color: rgba(255, 255, 255, 0.6);
+	padding-left: 10px;
+}
+.confirmation_holder .row.darkerPanel p, .dash_holder .content_holder .darkerPanel p {
+	padding-right: 20px;
+	padding-left: 10px;
+	margin-top: 10px;
+	color: rgba(255, 255, 255, 0.6);
+}
+.confirmation_holder .row.darkerPanel p strong, .dash_holder .content_holder .darkerPanel p strong {
+	font-weight: bold;
+	line-height: inherit;
+	display: inline-block;
+	width: 100%;
+	float: left;
+	padding: 6px 8px;
+	margin: -4px 0px 10px -8px;
+	border-radius: 4px;
+	color: #EEE;
+}
+.confirmation_holder .row.darkerPanel .bc_button {
+	float: right;
+	margin: 30px 20px 40px 0;
+}
+.confirmation_holder .row.darkerPanel p a {
+	text-decoration: underline;
+}
+/*-- Settings --*/
+.accounts_holder h1, .accounts_holder h2, .form_holder h1, .form_holder h2, .ladding_holder h1, .ladding_holder h2 {
+	text-align: center;
+	color: #333;
+	margin-top: 0;
+}
+.accounts_holder h2, .form_holder h2, .ladding_holder h2 {
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-top: 1px solid #ddd;
+	margin-top: 30px;
+	padding-top: 20px;
+	font-size: 22px;
+}
+.accounts_holder .contact_info, .form_holder .contact_info {
+	padding-top: 0px;
+	top: 0px;
+	height: 100%;
+	padding-bottom: 88px;
+	overflow-y: hidden;
+}
+.accounts_holder .bc_button, .form_holder .bc_button {
+	float: right;
+}
+.confirmation_holder .form-group.field_promo input {
+	float: left;
+	background-color: rgba(0, 0, 0, 0.3);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 3px;
+	margin: 4px 0 10px 10px;
+	padding: 5px 8px 4px 8px;
+	color: #EEE;
+	clear: both;
+	width: 315px;
+}
+.confirmation_holder .row.darkerPanel .bc_button.btn-applyDiscount {
+	margin: 5px 12px 10px 0;
+	padding: 3px 19px 5px 19px;
+}
+.confirmation_holder .row.darkerPanel .bc_button.btn-applyDiscount.remove {
+	font-size: 15px;
+	padding: 5px 13px 5px 13px;
+	background-color: #6E2C2C;
+	border-top: 1px solid #741212;
+	border-bottom: 1px solid #4E1C1C;
+}
+.confirmation_holder .row.darkerPanel .cost-breakdown p, .dash_holder .row.darkerPanel .cost-breakdown p {
+	padding: 0;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	font-size: 17px;
+}
+.confirmation_holder .row.darkerPanel .cost-breakdown p.grand-total {
+	font-size: 22px;
+	color: #fff;
+}
+ .confirmation_holder .form-group.field_promo ::-webkit-input-placeholder {
+ color:#888;
+}
+ .confirmation_holder .form-group.field_promo :-moz-placeholder {
+ color:#888;
+}
+ .confirmation_holder .form-group.field_promo ::-moz-placeholder {
+ color:#888;
+}
+ .confirmation_holder .form-group.field_promo :-ms-input-placeholder {
+ color:#888;
+}
+.confirmation_holder .form-group.field_promo {
+	padding-top: 3px;
+	display: block;
+}
+.confirmation_holder .form-group.field_promo .alert-box p {
+	margin-bottom: 15px;
+}
+.original-price span {
+	text-decoration: line-through;
+	opacity: 0.58;
+	padding-right: 10px;
+	float: right;
+}
+.cost-breakdown {
+	padding: 0 10px 0 20px;
+}
+.cost-breakdown .total-panel {
+	margin-top: 10px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.confirmation_holder .row.darkerPanel .cost-breakdown p.grand-total strong {
+	font-size: 22px;
+}
+.confirmation_holder .row.darkerPanel .cost-breakdown p strong, .dash_holder .row.darkerPanel .cost-breakdown p strong {
+	padding: 0;
+	margin: 0;
+	float: right;
+	width: auto;
+}
+.confirmation_holder .row.darkerPanel .total-panel .three h2, .dash_holder .row.darkerPanel .total-panel .three h2 {
+	border: none;
+}
+.confirmation_holder .row.darkerPanel .total-panel h2 {
+	margin: 8px 0 12px 18px;
+}
+.confirmation_holder h4, .dash_holder h4 {
+	margin: 18px 0 18px 28px;
+	    color: rgba(255,255,255,0.68);
+}
+.confirmation_holder .darkerPanel section, .dash_holder .darkerPanel section {
+	border: 1px solid rgba(255, 255, 255, 0.12);
+	padding: 0 10px 0 0;
+	margin: 0 -4px 12px 4px;
+	border-radius: 8px;
+	background-color: rgba(255, 255, 255, 0.05);
+	box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.18);
+}
+.total-panel strong {
+	font-size: 22px;
+	padding-top: 12px;
+	margin-right: 5px;
+	display: inline-block;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+	float: right;
+}
+.confirmation_holder .content_holder .btn_backAStep {
+	position: relative;
+	background-color: rgba(0, 0, 0, 0);
+	display: block;
+	margin: 50px 0 -75px 35px;
+	width: 200px;
+}

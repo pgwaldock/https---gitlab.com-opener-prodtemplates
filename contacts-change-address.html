@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" class="no-scroll app k-page-loading">
+<head>
+<meta charset="UTF-8" />
+<!-- Set the viewport width to device width for mobile + disable zoom on ipad -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+<!-- For third-generation iPad with high-resolution Retina display: -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/images/favicons/apple-touch-icon-144x144-precomposed.png">
+<!-- For iPhone with high-resolution Retina display: -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/favicons/apple-touch-icon-114x114-precomposed.png">
+<!-- For first- and second-generation iPad: -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/favicons/apple-touch-icon-72x72-precomposed.png">
+<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+<link rel="apple-touch-icon-precomposed" href="assets/images/favicons/apple-touch-icon-precomposed.png">
+<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+<link rel="icon" href="assets/images/favicons/favicon.ico" type="image/x-icon" />
+<!-- for desktop -->
+
+<link rel="shortcut icon" href="assets/images/favicons/favicon.ico">
+<title>Kontainers</title>
+<meta name="description" content="The Future of FCL and LCL shipping" />
+<meta name="keywords" content="" />
+
+<!--CSS-->
+<link rel="stylesheet prefetch" type="text/css" href="css/app.css" />
+
+<!-- pickadate -->
+<link rel="stylesheet" href="pickadate/themes/default.css" id="theme_base">
+<link rel="stylesheet" href="pickadate/themes/default.date.css" id="theme_date">
+<link rel="stylesheet" href="pickadate/themes/default.time.css" id="theme_time">
+
+<!--JS-->
+<!--<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>-->
+<script src="js/jquery-local.js" type="text/javascript"></script>
+</head>
+<body>
+
+<!-- contacts -->
+<div class="contacts no-button  open-contacts">
+  <div class="contacts_bar">
+    <h1>Contacts</h1>
+    <a class="close-contacts btn_close"></a> 
+    <a class=" bc_button btn_secondary btn_contact_new disabled">New</a> </div>
+  
+  <ul class="contacts_list ">
+    <li>Reginal Cumberbatch<a class="btn_editContact action_openNewContact">Edit</a> </li>
+    <li class="disabled">Acme Studios<span>Pauline Cherry</span><a class="btn_editContact action_openNewContact">Edit</a> </li>
+    <li class="disabled">Ardvark Enterprises<span>Bob Cratchet</span><a class="btn_editContact action_openNewContact">Edit</a> </li>
+    <li class="disabled">Atlas Ltd<span>Gus Richie</span><a class="btn_editContact action_openNewContact">Edit</a> </li>
+    <li class="disabled">Bartlet Holdings<span>Trish Magdeline</span><a class="btn_editContact action_openNewContact">Edit</a> </li>
+    <li>Bartlet Holdings<span>Richard Scott</span><a class="btn_editContact action_openNewContact">Edit</a> </li>
+    <li>Cartlet Holdings<span>Russel McBussel</span><a class="btn_editContact action_openNewContact">Edit</a> </li>
+    <li>Compton Jervy<span>Reece Patrice</span><a class="btn_editContact action_openNewContact">Edit</a> </li>
+    <li>Derby<span>Gorden Dee Gopher</span><a class="btn_editContact action_openNewContact">Edit</a> </li>
+    <li>Delta Holdings<span>Paul Monker</span><a class="btn_editContact action_openNewContact">Edit</a> </li>
+    <li class="disabled">Denver Artichokes<span>Jamie Archright</span><a class="btn_editContact action_openNewContact">Edit</a> </li>
+    <li class="disabled">Darrens Dypers<span>Darren Skidsville</span><a class="btn_editContact action_openNewContact">Edit</a> </li>
+    <li class="disabled">Fartlet Holdings<span>Richard Scott</span><a class="btn_editContact action_openNewContact">Edit</a> </li>
+    <li>Gartlobe Holdings<span>Lord Benjimin Wholewise</span><a class="btn_editContact action_openNewContact">Edit</a> </li>
+    <li class="disabled">Gompton Jervy<span>Charlie Benderson</span><a class="btn_editContact action_openNewContact">Edit</a> </li>
+    <li>Herby Riddles<span>Herby Riddler</span><a class="btn_editContact action_openNewContact">Edit</a> </li>
+    <li class="action_no-email">Nona Emailier<span>Paul Monker</span><a class="btn_editContact action_openNewContact">Edit</a> </li>
+  </ul>
+  <div class="contacts_footer"> <a class="close-contacts bc_button  action_addAddress">Use My Address</a> </div>
+</div>
+<!-- /contacts --> 
+
+<!-- contact_new -->
+<div class="contact_new no-button"> 
+  
+  <!-- contact prompt when trashing -->
+  <div class="contactPrompt hide-prompt">
+    <p>Sure you want to delete this contact?</p>
+    <a class="bc_button action_confirmTrash">Yes</a> <a class="bc_button action_confirmTrash">No</a> </div>
+  <div class="contacts_bar">
+    <h1>Contact Details</h1>
+    <a class="close-contacts btn_close"></a> <a class="trash-contact btn_trash"></a> </div>
+  <div class="contact_info">
+    <div class="row">
+      <div class="one columns"></div>
+      <div class="three columns">
+        <label for="company">Company<span class="required"> *</span> </label>
+      </div>
+      <div class="seven columns">
+        <input id="company2" class="ember-view ember-text-field" type="text">
+        <!-- error -->
+        <div class="alert-box alert hide-alert" data-bindattr-10="10">
+          <p>No special characters for address. Only Letters &amp; Numbers please.</p>
+        </div>
+        <!-- /error --> 
+      </div>
+      <div class="one columns"></div>
+    </div>
+    <div class="row">
+      <div class="one columns"></div>
+      <div class="three columns">
+        <label for="contact">Contact Name<span class="required"> *</span> </label>
+      </div>
+      <div class="seven columns">
+        <input id="contact" class="ember-view ember-text-field" type="text">
+        <!-- error -->
+        <div class="alert-box alert hide-alert" data-bindattr-10="10">
+          <p>No special characters for address. Only Letters &amp; Numbers please.</p>
+        </div>
+        <!-- /error --> 
+      </div>
+      <div class="one columns"></div>
+    </div>
+    <div class="row">
+      <div class="one columns"></div>
+      <div class="three columns">
+        <label for="contact-email">Contact Email<span class="required"> *</span> </label>
+      </div>
+      <div class="seven columns">
+        <input id="contact-email" class="ember-view ember-text-field" type="text">
+        <!-- error -->
+        <div class="alert-box alert hide-alert" data-bindattr-10="10">
+          <p>No special characters for address. Only Letters &amp; Numbers please.</p>
+        </div>
+        <!-- /error --> 
+        <!-- warning -->
+        <div class="alert-box warning hide-alert" data-bindattr-10="10">
+          <p>We don't have an email address. Add it now so they can have access to view this booking.</p>
+          <button class="bc_button moveForward action_cont-with-no-email">Continue without it</button>
+        </div>
+        <!-- /warning --> 
+      </div>
+      <div class="one columns"></div>
+    </div>
+    <div class="row">
+      <div class="one columns"></div>
+      <div class="three columns">
+        <label for="address1">Address Line 1<span class="required"> *</span> </label>
+      </div>
+      <div class="seven columns">
+        <input id="address1" class="ember-view ember-text-field error" type="text">
+        <!-- error -->
+        <div class="alert-box alert hide-alert" data-bindattr-10="10">
+          <p>No special characters for address. Only Letters &amp; Numbers please.</p>
+        </div>
+        <!-- /error --> 
+      </div>
+      <div class="one columns"></div>
+    </div>
+    <div class="row">
+      <div class="one columns"></div>
+      <div class="three columns">
+        <label for="address2">Address Line 2</label>
+      </div>
+      <div class="seven columns">
+        <input id="address2" class="ember-view ember-text-field" type="text">
+        <!-- error -->
+        <div class="alert-box alert hide-alert" data-bindattr-10="10">
+          <p>No special characters for address. Only Letters &amp; Numbers please.</p>
+        </div>
+        <!-- /error --> 
+      </div>
+      <div class="one columns"></div>
+    </div>
+    <div class="row">
+      <div class="one columns"></div>
+      <div class="three columns">
+        <label for="zip">Zip/Post Code</label>
+      </div>
+      <div class="seven columns">
+        <input id="zip" class="ember-view ember-text-field" type="text">
+        <!-- error -->
+        <div class="alert-box alert hide-alert" data-bindattr-10="10">
+          <p>No special characters for address. Only Letters &amp; Numbers please.</p>
+        </div>
+        <!-- /error --> 
+      </div>
+      <div class="one columns"></div>
+    </div>
+    <div class="row">
+      <div class="one columns"></div>
+      <div class="three columns">
+        <label for="country">Country</label>
+      </div>
+      <div class="seven columns"> 
+        <!-- typeahead-search  -->
+        <div class="ember-view">
+          <div class="search-holder typeahead-search ">
+            <input tabindex="2" type="text"  class="typeahead" >
+            <div class="search-results">
+              <ul>
+                <li><span>United Kingdom</span></li>
+                <li><span>France</span></li>
+                <li><span>Estonia</span></li>
+                <li><span>Belgium</span></li>
+                <li><span>Germany</span></li>
+                <li><span>Afganistan</span></li>
+                <li><span>Kasacstan</span></li>
+              </ul>
+            </div>
+            <div class="k-loading display-none"></div>
+            <div class="no-search-results display-none"> <span class="icon icon_search">No Results. Try searching again.</span> </div>
+          </div>
+        </div>
+        <!-- /typeahead-search  --> 
+        <!-- error -->
+        <div class="alert-box alert hide-alert" data-bindattr-10="10">
+          <p>No special characters for address. Only Letters &amp; Numbers please.</p>
+        </div>
+        <!-- /error --> 
+      </div>
+      <div class="one columns"></div>
+    </div>
+    <div class="row">
+      <div class="one columns"></div>
+      <div class="three columns">
+        <label for="tel">Telephone</label>
+      </div>
+      <div class="seven columns">
+        <input id="tel" class="ember-view ember-text-field" type="tel">
+        <!-- error -->
+        <div class="alert-box alert hide-alert" data-bindattr-10="10">
+          <p>No special characters for address. Only Letters &amp; Numbers please.</p>
+        </div>
+        <!-- /error --> 
+      </div>
+      <div class="one columns"></div>
+    </div>
+    <div class="row">
+      <div class="one columns"></div>
+      <div class="three columns">
+        <label for="fax">Fax</label>
+      </div>
+      <div class="seven columns">
+        <input id="fax" class="ember-view ember-text-field" type="text">
+        <!-- error -->
+        <div class="alert-box alert hide-alert" data-bindattr-10="10">
+          <p>No special characters for address. Only Letters &amp; Numbers please.</p>
+        </div>
+        <!-- /error --> 
+      </div>
+      <div class="one columns"></div>
+    </div>
+  </div>
+  <div class="contacts_footer"> <a class="close-contacts bc_button btn-save action_addAddress">Save Contact Details</a> </div>
+</div>
+<!-- /contact_new --> 
+
+<!-- Event handlers --> 
+<script src="js/furniture-handlers.js"></script> 
+
+<!-- Event handlers --> 
+<script src="js/booking-handlers.js"></script> 
+
+<!-- textarea expander  --> 
+<script src="js/textarea-expander.js"></script> 
+
+<!-- pickadate --> 
+<script src="pickadate/picker.js"></script> 
+<script src="pickadate/picker.date.js"></script> 
+<script src="pickadate/picker.time.js"></script> 
+<script src="pickadate/legacy.js"></script> 
+<script src="pickadate/pickadatedemo/scripts/demo.js"></script> 
+<script src="pickadate/pickadatedemo/scripts/rainbow.js"></script>
+</body>
+</html>

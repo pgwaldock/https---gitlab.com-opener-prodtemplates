@@ -1,0 +1,344 @@
+/* quotes journey - container-properties */
+.container-properties, .container-module, .lcl-module {
+	background-color: #4c5c61;
+	background: -moz-linear-gradient(top, #4C5C61 0%, #313e42 100%);
+	background: -webkit-linear-gradient(top, #4C5C61 0%, #313e42 100%);
+	background: linear-gradient(to bottom, #4C5C61 0%, #313e42 100%);
+	max-width: 702px;
+	border-radius: 8px;
+	position: relative;
+	height: 0px;
+	overflow: hidden;
+	padding: 0px 28px 0px 28px;
+	-webkit-transition: all .1s cubic-bezier(.29, .1, .5, .99);
+	transition: all .1s cubic-bezier(.29, .1, .5, .99);
+	margin: 0 auto;
+}
+.container-module, .lcl-module {
+	height: auto;
+	padding: 0px 35px 30px 35px;
+}
+.open .container-properties {
+	padding: 28px 28px 20px 28px;
+	height: 120px;
+}
+.container-properties .chk-holder {
+	float: right;
+	margin: 0 20px 0 0;
+}
+.container-properties .form-group {
+/*box-shadow: 2px 2px 0 0px rgba(0,0,0,0.4);*/
+}
+.container-properties .chk-holder label {
+	color: #fff;
+}
+.container-properties .form-group {
+	width: calc(100% - 8px);
+}
+.container-properties .form-group.field-type {
+	float: right;
+}
+.container-inputs .k-button, .lcl-inputs .k-button {
+	float: right;
+	margin: 8px 0px 0px 0;
+}
+.container-selector header {
+	padding-bottom: 20px;
+}
+.container-selector .big-button {
+	height: auto;
+	width: 16%;
+	min-width: 220px;
+	width: 220px;
+	padding-top: 128px;
+	padding-bottom: 18px;
+	margin: 8px 8px 18px 8px;
+}
+.container-selector .big-button.c-20 {
+	background-size: 140px auto;
+	background-position: 68% 33px;
+}
+.container-selector .big-button.c-40 {
+	background-size: 180px auto;/*    background-position: 60% 18px;*/
+}
+.container-selector .big-button.c-40hc {
+	background-size: 180px auto;
+}
+.container-selector.open .big-button {
+	font-size: 18px;/*border: 2px solid rgba(140,140,140,0.3);*/
+}
+.container-selector.open .big-button:hover, .container-selector .big-button:hover span.big-text {
+	transition-delay: 0s;
+}
+.container-selector.open .big-button span.big-text {
+	font-size: 26px;
+	transition: all 0.2s cubic-bezier(.29, .1, .5, .99);
+}
+.container-selector.open .big-button.active-tab {
+	padding-bottom: 60px;
+	margin-bottom: -24px;
+	background-color: #4C5C61;
+	pointer-events: none;
+	color: rgba(255,255,255,0.6);
+	-webkit-transition: all 0.1s cubic-bezier(.29, .1, .5, .99);
+	transition: all 0.1s cubic-bezier(.29, .1, .5, .99);
+	box-shadow: none;
+	border: none;
+}
+.container-selector.open .big-button.active-tab span.big-text {
+	color: #fff;
+}
+.container-properties .container-inputs {
+	border: none;
+	padding-top: 0;
+	padding-right: 4px;
+}
+.container-properties .container-inputs, .container-properties .lcl-inputs {
+	-webkit-transform: translate(0%, 80px);
+	transform: translate(0%, 80px);
+	transition: all 288ms cubic-bezier(.29, .1, .5, .99);
+}
+.container-selector.open .container-inputs, .container-selector.open .lcl-inputs {
+	-webkit-transform: translate(0%, 0px);
+	transform: translate(0%, 0px);
+}
+.container-inputs .k-button.simple, .lcl-inputs .k-button.simple {
+	margin: 15px 20px 0px -15px;
+	float: left;
+}
+/* individual container */
+
+
+
+
+.container-image {
+	width: 300px;
+	height: 190px;
+	background-size: 100% auto;
+	background-position: 50%;
+	background-repeat: no-repeat;
+	max-width: 702px;
+	display: inline-block;
+	margin-left: -10px;
+}
+.container-heading {
+	margin-top: 30px;
+}
+.container-heading h2 {
+	display: inline-block;
+	color: #fff;
+	font-size: 28px;
+	top: -92px;
+	position: relative;
+}
+.container-heading h2 span {
+	font-size: 20px;
+	display: block;
+	clear: both;
+	color: rgba(255,255,255,0.5);
+	position: absolute;
+}
+
+/* Add containers */
+
+
+/*hide the action buttons*/
+.one-container .new-container-actions, .all-containers .individual-container-actions {
+	display: none;
+}
+/*Transition to individual container*/
+.container-buttons {
+	height: 248px;
+	margin-bottom: -14px;
+}
+.container-inputs {
+	border-top: 1px solid rgba(255,255,255,0.2);
+	padding-top: 8px;
+}
+/* if more than one load */
+.lcl-module.multiple {
+	margin-top: 40px;
+}
+/* initial state of internal elements before holders collapse */
+.lcl-module .container-heading .container-image {
+	width: 250px;
+}
+.lcl-module .container-heading h2 {
+	display: block;
+	top: -20px;
+}
+.lcl-module .k-button.simple.icon_trash {
+	float: right;
+	margin-top: -75px;
+	margin-right: -15px;
+}
+.lcl-module .container-heading, .lcl-module .lcl-dimensions {
+	width: 45%;
+	display: inline-block;
+}
+.lcl-module h2 {
+	color: #fff;
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+	padding-bottom: 15px;
+	text-align: left;
+	font-size: 24px;
+}
+.lcl-module p {
+	color: #fff;
+	margin: 25px 0 18px 0;
+	text-align: left;
+	display: block;
+	float: left;
+	font-size: 16px;
+}
+.lcl-module h3 {
+	color: #fff;
+	text-align: left;
+	font-size: 19px;
+}
+.lcl-load {
+	margin-top: 0px;
+	-webkit-transition: all 0.5s cubic-bezier(.29, .1, .5, .99);
+	transition: all 0.5s cubic-bezier(.29, .1, .5, .99);
+	max-height: 0;
+	overflow: hidden;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	opacity: 0;
+}
+.lcl-load.show {
+	margin-top: 30px;
+	padding-bottom: 18px;
+	max-height: 630px;
+	opacity: 1;
+}
+.lcl-totals {
+    -webkit-transition: all 0.2s cubic-bezier(.29, .1, .5, .99);
+    transition: all 0.4s cubic-bezier(.29, .1, .5, .99);
+    max-height: 88px;
+    z-index: 3;
+    top: -180px;
+    position: fixed;
+    width: calc(100% - 250px);
+    right: 0;
+    background-color: #EAEDF1;
+    background: linear-gradient(to bottom, #F9FBFC 1%, #EAEDF1 100%);
+    border-bottom: 2px solid rgba(200,206,214,0.68);
+}
+.lcl-totals.show {
+    top: 68px;
+}
+.lcl-totals .row {
+	max-width: 748px;
+	padding: 10px 28px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+.lcl-totals h3 {
+	color: #fff;
+	margin: 14px 0 0 0;
+	font-size: 20px;
+	font-size: 18px;
+	color: #8e99aa;
+}
+.lcl-totals .k-form-group {
+	padding: 2px;
+	margin-bottom: 0;
+	min-height: 38px;
+	background-color: rgba(255,255,255,0.1);
+	border: 1px solid #b7bbc1;
+}
+.lcl-totals .k-form-group.read-only .k-unit {
+	padding-top: 16px;
+	font-size: 14px;
+	color: #636b76;
+}
+.lcl-totals .vol-col, .lcl-totals .weight-col {
+	width: 37.4%;
+}
+.lcl-totals .vol-col {
+	padding-right: 4px;
+}
+.lcl-totals .weight-col {
+	padding-left: 4px;
+}
+.lcl-totals .k-form-group.read-only label, .lcl-totals .k-form-group.read-only input {
+	color: #636b76;
+}
+/* error */
+
+.container-properties .alert {
+	margin-top: 55px;
+	position: absolute;
+	margin-left: 202px;
+	padding: 0px;
+	width: 280px;
+}
+.container-properties .alert {
+	margin-top: 55px;
+	position: absolute;
+	margin-left: 200px;
+	padding: 0px;
+	width: 280px;
+}
+.container-properties .alert:before {
+	border-left: 16px solid rgba(0, 0, 0, 0);
+	border-right: 16px solid rgba(0, 0, 0, 0);
+	border-bottom: 16px solid #D23A3A;
+	margin-top: -8px;
+	left: calc(50% - 8px);
+}
+.container-properties .alert p {
+	font-size: 15px;
+	margin-bottom: 5px;
+	padding-top: 0;
+}
+ul.container-list {
+	max-width: 702px;
+	margin: 0 auto;
+	width: 100%;
+}
+ul.container-list li {
+	display: block;
+	background-color: #4c5c61;
+	background: -moz-linear-gradient(top, #4C5C61 0%, #313e42 100%);
+	background: -webkit-linear-gradient(top, #4C5C61 0%, #313e42 100%);
+	background: linear-gradient(to bottom, #4C5C61 0%, #313e42 100%);
+	border-radius: 8px;
+	margin-top: 0px;
+	padding: 0px 8px;
+	float: left;
+	width: 100%;
+	overflow: hidden;
+	max-height: 0;
+	-webkit-transition: all 0.3s cubic-bezier(.29, .1, .5, .99);
+	transition: all 0.3s cubic-bezier(.29, .1, .5, .99);
+}
+ul.container-list li.show {
+	margin-top: 4px;
+	padding: 8px;
+	max-height: 100px;
+}
+ul.container-list li .container-image {
+	width: 55px;
+	height: 50px;
+	float: left;
+	margin-left: 10px;
+	margin-top: 0px;
+}
+ul.container-list li p {
+	color: #fff;
+	float: left;
+	font-size: 20px;
+	padding: 10px 0 0 8px;
+	margin: 0;
+}
+ul.container-list li p span {
+	font-style: italic;
+	opacity: 0.8;
+	font-size: 18px;
+}
+ul.container-list li .k-button.simple {
+	float: right;
+	margin: 4px 0 0 0;
+}

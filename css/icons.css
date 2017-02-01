@@ -1,0 +1,341 @@
+@font-face {
+	font-family: 'icons';
+	src: url('../assets/fonts/icons.ttf') format('truetype'), url('../assets/fonts/icons.woff') format('woff'), url('../assets/fonts/icons.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/* character assignment*/
+.icon:before, .locked:before {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icons' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	display:inline-block;
+}
+/* label/strong icons */
+label.icon:before, strong.icon:before {
+	margin: 3px 8px 0 6px;
+}
+/* character assignment*/
+.icon_accountnumber:before {
+	content: "\e900";
+}
+.icon_add:before {
+	content: "\e901";
+}
+.icon_addcontact:before {
+	content: "\e902";
+}
+.icon_arrowleft:before {
+	content: "\e903";
+}
+.icon_arrowright:before {
+	content: "\e904";
+}
+.icon_basket:before {
+	content: "\e905";
+}
+.icon_calender:before {
+	content: "\e906";
+}
+.icon_cardname:before {
+	content: "\e907";
+}
+.icon_cardnumber:before {
+	content: "\e908";
+}
+.icon_cargo:before {
+	content: "\e909";
+}
+.icon_cargodetails:before {
+	content: "\e90a";
+}
+.icon_close:before {
+	content: "\e90b";
+}
+.icon_closequote:before {
+	content: "\e90c";
+}
+.icon_code:before {
+	content: "\e90d";
+}
+.icon_consignee:before {
+	content: "\e90e";
+}
+.icon_consignor:before {
+	content: "\e90f";
+}
+.icon_contact:before {
+	content: "\e910";
+}
+.icon_customerdetails:before {
+	content: "\e911";
+}
+.icon_customs:before {
+	content: "\e912";
+}
+.icon_dashboard:before {
+	content: "\e913";
+}
+.icon_delivery:before {
+	content: "\e914";
+}
+.icon_dimensions:before {
+	content: "\e915";
+}
+.icon_document:before {
+	content: "\e916";
+}
+.icon_drop:before {
+	content: "\e917";
+}
+.icon_duplicateorder:before {
+	content: "\e918";
+}
+.icon_edit:before {
+	content: "\e919";
+}
+.icon_editorder:before {
+	content: "\e91a";
+}
+.icon_eps:before {
+	content: "\e91b";
+}
+.icon_exit:before {
+	content: "\e91c";
+}
+.icon_fcl:before {
+	content: "\e91d";
+}
+.icon_filter:before {
+	content: "\e91e";
+}
+.icon_hazardous:before {
+	content: "\e91f";
+}
+.icon_height:before {
+	content: "\e920";
+}
+.icon_help:before {
+	content: "\e921";
+}
+.icon_info:before {
+	content: "\e922";
+}
+.icon_lcl:before {
+	content: "\e923";
+}
+.icon_length:before {
+	content: "\e924";
+}
+.icon_login:before {
+	content: "\e925";
+}
+.icon_mail:before {
+	content: "\e926";
+}
+.icon_marker:before {
+	content: "\e927";
+}
+.icon_message:before {
+	content: "\e928";
+}
+.icon_notifiedparty:before {
+	content: "\e929";
+}
+.icon_openquote:before {
+	content: "\e92a";
+}
+.icon_order:before {
+	content: "\e92b";
+}
+.icon_packaging:before {
+	content: "\e92c";
+}
+.icon_pallets:before {
+	content: "\e92d";
+}
+.icon_pdf:before {
+	content: "\e92e";
+}
+.icon_phone:before {
+	content: "\e92f";
+}
+.icon_play:before {
+	content: "\e930";
+}
+.icon_png:before {
+	content: "\e931";
+}
+.icon_port:before {
+	content: "\e932";
+}
+.icon_quantity:before {
+	content: "\e933";
+}
+.icon_quotes:before {
+	content: "\e934";
+}
+.icon_reefer:before {
+	content: "\e935";
+}
+.icon_reference:before {
+	content: "\e936";
+}
+.icon_save:before {
+	content: "\e937";
+}
+.icon_search:before {
+	content: "\e938";
+}
+.icon_secure:before {
+	content: "\e939";
+}
+.icon_securitycode:before {
+	content: "\e93a";
+}
+.icon_select:before {
+	content: "\e93b";
+}
+.icon_settings:before {
+	content: "\e93c";
+}
+.icon_share:before {
+	content: "\e93d";
+}
+.icon_shipping:before {
+	content: "\e93e";
+}
+.icon_sortcode:before {
+	content: "\e93f";
+}
+.icon_temperature:before {
+	content: "\e940";
+}
+.icon_tick:before {
+	content: "\e941";
+}
+.icon_time:before {
+	content: "\e942";
+}
+.icon_trash:before {
+	content: "\e943";
+}
+.icon_trucking:before {
+	content: "\e944";
+}
+.icon_value:before {
+	content: "\e945";
+}
+.icon_volume:before {
+	content: "\e946";
+}
+.icon_weight:before {
+	content: "\e947";
+}
+.icon_width:before {
+	content: "\e948";
+}
+/*adjustments*/
+
+/* button icons */
+button.icon:before {
+	margin: -5px 10px 0 0;
+	vertical-align: middle;
+	display: inline-block;
+}
+button.icon_arrowright:before {
+	content: "\e904";
+	float: right;
+	margin: 4px -3px 0 10px;
+}
+button.icon_close:before, .icon_share:before {
+	margin-top: -3px;
+}
+.quote-actions button.icon:before {
+	margin: -3px 10px 0 0;
+}
+/* single icons */
+i.icon:before {
+	font-size: 38px;
+	color: #111;
+}
+/* text icons */
+span.icon:before {
+	margin-right: 8px;
+	color: #111;
+}
+/* link icons */
+a.icon:before {
+	margin-right: 8px;
+}
+/* heading icons */
+h2.icon:before {
+	margin-right: 8px;
+}
+/* p icons */
+p.icon:before {
+	margin-right: 8px;
+}
+/* legend icons */
+legend.icon:before {
+	margin-right: 8px;
+}
+/* list icons */
+li.icon:before {
+	color: #ccc;
+	display: block;
+	float: left;
+	font-size: 20px;
+	margin: 19px 10px 0 14px;
+}
+li.icon:hover:before {
+	color: #fff;
+}
+/* module-nav*/
+.module-nav span.icon {
+	margin-right: 5px;
+}
+.btn-module i.icon:before {
+	font-size: 18px;
+	margin-top: 3px;
+	float: right;
+	margin-left: 3px;
+}
+.btn-module i.icon.icon_tick:before {
+	color: #31a657;
+}
+.btn-module i.icon.icon_close:before {
+	color: #be404f;
+}
+.btn-module h2.icon:before, .btn-module h2.icon.icon_marker.to_marker:before {
+	color: #fff;
+}
+/* options icons*/
+.btn-module i.icon.icon_reefer:before, .btn-module i.icon.icon_hazardous:before, .btn-module i.icon.icon_customs:before {
+	color: #888;
+}
+/* marker icons */
+label.icon.icon_marker:before, h2.icon.icon_marker:before, strong.icon.icon_marker:before, .btn-module h2.icon.icon_marker:before {
+	color: #63a4b2;
+}
+label.icon_marker.to_marker:before, h2.icon.icon_marker.to_marker:before, .btn-module h2.icon.icon_marker.to_marker:before {
+	color: #e5be2c;
+}
+/*reefer icon*/
+span.icon_reefer:before {
+	color: #4caacb;
+}
+/*multi-questions*/
+.multi-question .big-button.boole.icon:before {
+	font-size: 32px;
+	float: left;
+	margin: 4px -10px 0px 20px;
+}
