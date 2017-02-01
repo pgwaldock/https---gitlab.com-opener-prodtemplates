@@ -1,0 +1,189 @@
+.docs_holder {
+	background-color: #27363d;
+	z-index: 5;
+	padding-top:15px;
+}
+table.filesTable {
+	border-collapse: collapse;
+	margin: 0 0 60px 0;
+	overflow: hidden;
+	display: table;
+	width: 100%;
+	font: 16px "k-font-regular", tahoma, sans-serif;
+	border-radius: 8px;
+}
+table.filesTable tbody {
+	border-bottom: 2px solid rgba(255, 255, 255, 0.12);
+}
+table.filesTable thead tr th, table.filesTable tbody tr td, table.filesTable tr td {
+	font-size: 18px;
+	line-height: 32px;
+	text-align: left;
+	padding: 18px;
+}
+table.filesTable thead tr th {
+	background-color: rgba(0,0,0,0.18);
+	font: 18px "k-font-regular", tahoma, sans-serif;
+	color: #ccc;
+}
+table.filesTable tbody tr td {
+	font-size: 16px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+	color: #eee;
+	vertical-align: middle;
+	background-color: rgba(0,0,0,0.04);
+	padding: 8px 18px;
+}
+table.filesTable tbody tr td.fileName, table.filesTable tbody tr th.fileName {
+	width: 380px;
+	max-width: 400px;
+}
+table.filesTable tbody tr td.fileAction, table.filesTable tbody tr th.fileAction {
+	width: 190px;
+}
+table.filesTable tr td.fileName a {
+	color: #ccc;
+	font: 18px "k-font-regular", tahoma, sans-serif;
+	padding-right: 20px;
+}
+table.filesTable tr td.fileName a:hover {
+	color: #2ba6b3;
+}
+table.filesTable .bc_button.btn_secondary {
+	padding: 10px 18px 10px 18px;
+	width: 100%;
+	opacity: 0;
+}
+table.filesTable .bc_button.btn-save {
+	margin: -1px 30px 0 -30px;
+	display: block;
+	float: left;
+	padding: 10px 18px 10px 45px;
+	width: auto;
+	-o-transform: scale(.8);
+	-moz-transform: scale(.8);
+	-ms-transform: scale(.8);
+	-webkit-transform: scale(.8);
+	transform: scale(.8);
+}
+table.filesTable .btn_trash, table.filesTable .btn_trash:hover {
+	position: relative;
+	right: -20px;
+	background-color: rgba(255,255,255,0.03);
+	border: 1px solid rgba(255,255,255,0.1);
+	top:5px;
+}
+table.filesTable .btn_trash:hover {
+
+	background-color: rgba(0,0,0,0.04);
+	
+}
+table.filesTable input[type="text"], table.filesTable textarea {
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+	padding: 8px 12px 8px 12px;
+	font-family: "k-font-regular", tahoma, sans-serif;
+	border-radius: 5px;
+	color: #ccc;
+	width: 100%;
+	background-color: rgba(0,0,0,0.38);
+	margin: 0;
+}
+table.filesTable textarea {
+	resize: none;
+	height: 38px;
+	overflow: hidden;
+	word-wrap: break-word;
+	white-space: pre-wrap;
+	margin: -6px 0 -6px 0;
+}
+table.filesTable .btn-filter {
+	margin: 2px 0px 0px 3px;
+}
+table.filesTable .alert {
+	position: absolute;
+	max-width: 250px;
+	margin-left: -50px;
+	margin-top: 4px;
+}
+table.filesTable p {
+	padding: 12px 0 12px 0;
+	font-style: italic;
+	    color: rgba(255,255,255,0.5);
+		margin-bottom:0;
+}
+.file-decrypter span {
+	display: none;
+}
+.file-decrypter.decrypting a.secure-file {
+	display: none;
+}
+ @-webkit-keyframes fade-in-out {
+0% {
+opacity:0;
+}
+50% {
+ opacity:1;
+}
+100% {
+ opacity:0;
+}
+}
+@keyframes fade-in-out {
+0% {
+opacity:0;
+}
+50% {
+ opacity:1;
+}
+100% {
+ opacity:0;
+}
+}
+.file-decrypter.decrypting span {
+	display: block;
+	font: 16px "k-font-regular", tahoma, sans-serif;
+	font-style: italic;
+	-webkit-animation: fade-in-out 1s linear infinite;
+	animation: fade-in-out 1s linear infinite
+}
+.open-file {
+	display: none;
+}
+.file-decrypter.decrypted .open-file {
+	display: inline-block;
+	border: 1px solid rgba(255,255,255,0.2);
+	border-radius: 4px;
+	padding: 2px 8px;
+	font-size: 14px;
+	background-color: rgba(255,255,255,0.08);
+	box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.68);
+	float: left;
+	margin-top: -24px;
+}
+.file-decrypter.decrypted .open-file:hover {
+	color: #eee;
+	box-shadow: none;
+}
+a.secure-file {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: block;
+}
+.file-decrypter.decrypted a.secure-file {
+	pointer-events: none;
+	opacity: 0.38;
+	font-style: italic;
+	margin-left: 90px;
+}
+table.filesTable tbody tr.failed-upload td {
+	background-color: rgba(129, 25, 25, 0.3);
+}
+table.filesTable tbody tr.failed-upload td a, table.filesTable tbody tr.failed-upload td p {
+	pointer-events: none;
+	color: #d79da2;
+}
+table.filesTable tbody tr.failed-upload .btn_trash {
+	right: -118px;
+	margin-top: -2px;
+}

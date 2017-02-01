@@ -1,0 +1,231 @@
+.k-button {
+	display: inline-block;
+	width: auto;
+	line-height: 1;
+	margin: 8px 10px 8px 0px;
+	outline: none;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 5px;
+	padding: 10px 18px 10px 18px;
+	text-transform: auto;
+	font: 18px "k-font-medium", tahoma, sans-serif;
+	height: auto;
+	-webkit-transition: none;
+	transition: none;
+	background: #fff;
+	box-shadow: 0 3px 0 -0.5px rgba(0,0,0,0.2);
+	color: #333;
+	border: 1px solid rgba(0,0,0,0.2);
+	border-bottom: none;
+}
+.home-screen .k-button {
+	/*box-shadow: 0 3px 0 -0.5px rgba(255,255,255,0.5);*/
+	font-size: 20px;
+	border: none;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+39,eaedf1+99 */
+
+	background: rgb(255,255,255); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 39%, rgba(234,237,241,1) 99%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 39%, rgba(234,237,241,1) 99%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 39%, rgba(234,237,241,1) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eaedf1', GradientType=0 ); /* IE6-9 */
+}
+.k-button:hover, button:hover, .k-button.current {
+	top: 2px;
+	-webkit-transition: none;
+	-moz-transition: none;
+	-o-transition: none;
+	-ms-transition: none;
+	transition: none;
+	color: #333;
+	box-shadow: 0 1px rgba(0,0,0,0.2);
+	cursor: pointer;
+}
+.k-button.cta {
+	text-shadow: none;
+	display: inline-block;
+	box-shadow: 0 3px 0 -0.5px #145f67;
+	background: #2ba6b3;
+	color: #FFF;
+	border: 1px solid #319eaa;
+	border-bottom: none;
+}
+.k-button.cta:hover {
+	color: #fff;
+	background: #2296a2;
+	box-shadow: 0 1px #145f67;
+}
+/*on a #111 bg */
+.k-button.dark {
+	background: #222;
+	box-shadow: 0 3px #000;
+	color: #ddd;
+	border: 1px solid #333;
+	border-bottom: none;
+}
+.k-button.dark:hover {
+	color: #ccc;
+	background: #111;
+	box-shadow: 0 1px #444;
+}
+.k-button.simple {
+	color: #fff;
+	background: rgba(0, 0, 0, 0);
+	border: none;
+	box-shadow: none;
+	font-size: 16px;
+}
+.k-button.simple:hover {
+	top: 0;
+	color: #F1BF1A;
+	
+}
+.k-button.centered {
+    margin: 60px auto;
+    display: block;
+    clear: both;
+}
+.home-screen .k-button.simple {
+	font-size: 20px;
+    border: 1px solid rgba(255,255,255,0.6);
+	font-size: 20px;
+}
+.home-screen .k-button.simple:hover {
+	color:#fff;
+	background-color:rgba(0,0,0,0.06);
+	top: 2px;
+}
+.k-button.disabled {
+	opacity: 0.38;
+	pointer-events: none;
+	filter: gray;
+	filter: grayscale(0.8);
+	-webkit-filter: grayscale(0.8);
+}
+.k-button em {
+	font-size: 14px;
+	opacity: 0.5;
+}
+.k-button.btn_tertiary {
+	background-color: #0E4E76;
+	border-bottom: 2px solid #073f62;
+	border-top: 1px solid #246a95;
+	text-shadow: #053a5b -1px -1px 0px;
+}
+.k-button.btn_tertiary:hover {
+	background-color: #0a466b;
+	border-bottom: 0px solid #073f62;
+	border-top: 3px solid #246a95;
+}
+/* large buttons with central image and text at bottom */
+.big-button {
+	border-radius: 8px;
+	height: 284px;
+	width: 30%;
+	display: inline-block;
+	margin: 18px;
+	border: 1px solid transparent;
+	-webkit-transition: all 0.2s cubic-bezier(.29, .1, .5, .99);
+	transition: all 0.2s cubic-bezier(.29, .1, .5, .99);
+	background-color: rgba(255,255,255,0);
+	min-width: 300px;
+	max-width: 400px;
+	padding-top: 190px;
+	color: #888;
+	background-size: 280px auto;
+	background-position: 54% 28px;
+	background-repeat: no-repeat;
+	box-shadow: inset 0px 0px 0px 0px transparent;
+	font: 18px "k-font-regular", tahoma, sans-serif;
+	overflow: hidden;
+	/*-webkit-filter: blur(0);*/
+}
+.big-button:hover, .big-button.selected {
+	color: #111;
+	box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.08);
+	border: 1px solid rgba(0,0,0,0.2);
+	background-color: rgba(255,255,255,0.48);
+
+	
+}
+.big-button.selected {
+	box-shadow: inset 0px 0px 8px 2px rgba(0,0,0,0.08);
+	background-color: rgba(0,0,0,0.02);
+	
+}
+.big-button.disabled {
+	pointer-events: none;
+	opacity: 0.3;
+	-webkit-filter: grayscale(1)!important;
+	filter: grayscale(1)!important;
+}
+.big-button span.big-text {
+	font-size: 28px;
+	color: #333;
+	display: block;
+}
+.btn-containers, .c-20 {
+	background-image: url(../assets/images/container.png);
+}
+.c-40 {
+	background-image: url(../assets/images/container-40.png);
+}
+.c-40hc {
+	background-image: url(../assets/images/container-40hc.png);
+}
+.btn-pallets {
+	background-image: url(../assets/images/pallet.png);
+}
+.big-button.boole {
+	    padding-top: 0px;
+    height: 150px;
+    max-width: 220px;
+    min-width: 200px;
+}
+.big-button.boole.icon:before {
+	margin: 0px 0px 10px 0;
+	display: inline-block;
+	font-size: 48px;
+}
+.big-button.boole.icon_tick:before {
+	    color: #2BA6B3;
+}
+.big-button.boole.icon_close:before {
+	color: #bf3a49;
+}
+.btn-uk, .btn-usa {
+	 background-position: 50% 34px;
+	    padding-top: 210px;
+    font-size: 24px;
+}
+.btn-uk {
+	background-image: url(../assets/images/flag-uk.png);
+}
+.btn-usa {
+	background-image: url(../assets/images/flag-usa.png);
+}
+.btn-import {
+	background-image: url(../assets/images/import.png);
+}
+.btn-export {
+	background-image: url(../assets/images/export.png);
+}
+
+.big-button.no-image {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+/* large buttons with central image and text at bottom */
+.k-modal.dark .big-button {
+	color: rgba(255,255,255,0.8);
+	background-color: transparent;
+}
+.k-modal.dark .big-button:hover {
+	color: rgba(255,255,255,1);
+	background-color: rgba(255,255,255,0.04);
+	border: 1px solid rgba(255,255,255,0.18);
+}
+
+

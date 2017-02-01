@@ -1,0 +1,102 @@
+ .focus-panel ::-webkit-scrollbar-track {
+ background-color: rgba(0,0,0,0.18);
+}
+/* --------------------------------------  buttons.css  ------------------------------------------ */
+.home-screen .k-button.icon_quotes:hover {
+	background-image: -webkit-linear-gradient(bottom, #475f68 1%, #1E2123 100%);
+	color: #fff;
+	top:0;
+}
+.big-button  {
+    color: #ccc;
+}
+.big-button span.big-text {
+ 
+    color: #fff;
+  
+}
+.big-button:hover {
+	color: #111;
+	box-shadow: 0px 0px 8px 2px rgba(255,255,255,.08);
+	border: 1px solid rgba(255,255,255,.2);
+	background-color: rgba(255,255,255,0.0);
+}
+.big-button:hover, .big-button.selected {
+	color:#fff;
+}
+
+/* --------------------------------------  typography.css  ------------------------------------------ */
+h1, h2, h3, h4, h5, h6, label {
+	color: #fff;
+}
+/* --------------------------------------  app.css  ------------------------------------------ */
+.focus-panel-bg {
+	background-image: -webkit-linear-gradient(top, #1b3c52 20px, #314f68 100%);
+	background-image: -webkit-linear-gradient(bottom, #475f68 1%, #1E2123 100%);
+}
+/* --------------------------------------  quotes.css  ------------------------------------------ */
+.quote-tools {
+	background-color: #283337;
+	border-bottom: none;
+	box-shadow: none;
+	background-image:none;
+	background-color: #283337;
+}
+.quote-labels .q-carrier, .quote-labels .q-depart, .quote-labels .q-duration, .quote-labels .q-arrive, .q-cta-label {
+	color: #fff;
+}
+.q-carrier, .q_day {
+	color: #fff;
+}
+.q-carrier, .q-depart, .q-duration, .q-arrive, .q-cta, .q-cta-label {
+	border-right: 1px solid rgba(0,0,0,0.18);
+}
+.quote-module {
+	background-color: rgba(255,255,255,0.1);
+}
+.quote-tools .k-button {
+	background-color: rgba(0,0,0,0.2);
+	color: rgba(255,255,255,0.7);
+	box-shadow: 0 3px 0 -0.5px #000;
+	box-shadow: 0 3px 0 -0.5px rgba(0,0,0,0.4);
+}
+.quote-tools .k-button.current {
+	box-shadow: none;
+}
+.q-cta {
+	background: -webkit-linear-gradient(left, #131719 0%, #1f2426 8%, #1f2426 100%);
+}
+.quote-tools-holder h1 {
+	color: #fff;
+}
+.multi-question, .quote-module {
+	box-shadow: none;
+	
+	background-color: rgba(255,255,255,0.1);
+}
+.multi-question {
+	
+}
+.multi-question p span {
+
+    color: #fff;
+}
+/* --------------------------------------  search.css  ------------------------------------------ */
+.search-results ul li a {
+	color: #fff;
+}
+.search-results ul li {
+	border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.search-field-holder label {
+	color: rgba(255,255,255,0.8);
+}
+/* --------------------------------------  contaner-selector.css  ------------------------------------------ */
+.container-properties, .container-module, .lcl-module {
+	background-color: transparent;
+	background-image: none;
+}
+
+.container-properties, .container-selector.open .big-button.active-tab {
+   background-color: #55696f;
+}

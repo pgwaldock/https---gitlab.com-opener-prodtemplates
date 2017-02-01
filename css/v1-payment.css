@@ -1,0 +1,589 @@
+.payment_holder {
+	background-color: #27363d;
+}
+
+
+
+/*payment*/
+
+ @-moz-keyframes shakeAnimation {
+0% {
+-webkit-transform:translateX(0);
+-moz-transform:translateX(0);
+-ms-transform:translateX(0);
+-o-transform:translateX(0);
+transform:translateX(0)
+}
+12.5% {
+-webkit-transform:translateX(-6px) rotateY(-5deg);
+-moz-transform:translateX(-6px) rotateY(-5deg);
+-ms-transform:translateX(-6px) rotateY(-5deg);
+-o-transform:translateX(-6px) rotateY(-5deg);
+transform:translateX(-6px) rotateY(-5deg)
+}
+37.5% {
+-webkit-transform:translateX(5px) rotateY(4deg);
+-moz-transform:translateX(5px) rotateY(4deg);
+-ms-transform:translateX(5px) rotateY(4deg);
+-o-transform:translateX(5px) rotateY(4deg);
+transform:translateX(5px) rotateY(4deg)
+}
+62.5% {
+-webkit-transform:translateX(-3px) rotateY(-2deg);
+-moz-transform:translateX(-3px) rotateY(-2deg);
+-ms-transform:translateX(-3px) rotateY(-2deg);
+-o-transform:translateX(-3px) rotateY(-2deg);
+transform:translateX(-3px) rotateY(-2deg)
+}
+87.5% {
+-webkit-transform:translateX(2px) rotateY(1deg);
+-moz-transform:translateX(2px) rotateY(1deg);
+-ms-transform:translateX(2px) rotateY(1deg);
+-o-transform:translateX(2px) rotateY(1deg);
+transform:translateX(2px) rotateY(1deg)
+}
+100% {
+-webkit-transform:translateX(0);
+-moz-transform:translateX(0);
+-ms-transform:translateX(0);
+-o-transform:translateX(0);
+transform:translateX(0)
+}
+}
+@-webkit-keyframes shakeAnimation {
+0% {
+-webkit-transform:translateX(0);
+-moz-transform:translateX(0);
+-ms-transform:translateX(0);
+-o-transform:translateX(0);
+transform:translateX(0)
+}
+12.5% {
+-webkit-transform:translateX(-6px) rotateY(-5deg);
+-moz-transform:translateX(-6px) rotateY(-5deg);
+-ms-transform:translateX(-6px) rotateY(-5deg);
+-o-transform:translateX(-6px) rotateY(-5deg);
+transform:translateX(-6px) rotateY(-5deg)
+}
+37.5% {
+-webkit-transform:translateX(5px) rotateY(4deg);
+-moz-transform:translateX(5px) rotateY(4deg);
+-ms-transform:translateX(5px) rotateY(4deg);
+-o-transform:translateX(5px) rotateY(4deg);
+transform:translateX(5px) rotateY(4deg)
+}
+62.5% {
+-webkit-transform:translateX(-3px) rotateY(-2deg);
+-moz-transform:translateX(-3px) rotateY(-2deg);
+-ms-transform:translateX(-3px) rotateY(-2deg);
+-o-transform:translateX(-3px) rotateY(-2deg);
+transform:translateX(-3px) rotateY(-2deg)
+}
+87.5% {
+-webkit-transform:translateX(2px) rotateY(1deg);
+-moz-transform:translateX(2px) rotateY(1deg);
+-ms-transform:translateX(2px) rotateY(1deg);
+-o-transform:translateX(2px) rotateY(1deg);
+transform:translateX(2px) rotateY(1deg)
+}
+100% {
+-webkit-transform:translateX(0);
+-moz-transform:translateX(0);
+-ms-transform:translateX(0);
+-o-transform:translateX(0);
+transform:translateX(0)
+}
+}
+@-o-keyframes shakeAnimation {
+0% {
+-webkit-transform:translateX(0);
+-moz-transform:translateX(0);
+-ms-transform:translateX(0);
+-o-transform:translateX(0);
+transform:translateX(0)
+}
+12.5% {
+-webkit-transform:translateX(-6px) rotateY(-5deg);
+-moz-transform:translateX(-6px) rotateY(-5deg);
+-ms-transform:translateX(-6px) rotateY(-5deg);
+-o-transform:translateX(-6px) rotateY(-5deg);
+transform:translateX(-6px) rotateY(-5deg)
+}
+37.5% {
+-webkit-transform:translateX(5px) rotateY(4deg);
+-moz-transform:translateX(5px) rotateY(4deg);
+-ms-transform:translateX(5px) rotateY(4deg);
+-o-transform:translateX(5px) rotateY(4deg);
+transform:translateX(5px) rotateY(4deg)
+}
+62.5% {
+-webkit-transform:translateX(-3px) rotateY(-2deg);
+-moz-transform:translateX(-3px) rotateY(-2deg);
+-ms-transform:translateX(-3px) rotateY(-2deg);
+-o-transform:translateX(-3px) rotateY(-2deg);
+transform:translateX(-3px) rotateY(-2deg)
+}
+87.5% {
+-webkit-transform:translateX(2px) rotateY(1deg);
+-moz-transform:translateX(2px) rotateY(1deg);
+-ms-transform:translateX(2px) rotateY(1deg);
+-o-transform:translateX(2px) rotateY(1deg);
+transform:translateX(2px) rotateY(1deg)
+}
+100% {
+-webkit-transform:translateX(0);
+-moz-transform:translateX(0);
+-ms-transform:translateX(0);
+-o-transform:translateX(0);
+transform:translateX(0)
+}
+}
+@-ms-keyframes shakeAnimation {
+0% {
+-webkit-transform:translateX(0);
+-moz-transform:translateX(0);
+-ms-transform:translateX(0);
+-o-transform:translateX(0);
+transform:translateX(0)
+}
+12.5% {
+-webkit-transform:translateX(-6px) rotateY(-5deg);
+-moz-transform:translateX(-6px) rotateY(-5deg);
+-ms-transform:translateX(-6px) rotateY(-5deg);
+-o-transform:translateX(-6px) rotateY(-5deg);
+transform:translateX(-6px) rotateY(-5deg)
+}
+37.5% {
+-webkit-transform:translateX(5px) rotateY(4deg);
+-moz-transform:translateX(5px) rotateY(4deg);
+-ms-transform:translateX(5px) rotateY(4deg);
+-o-transform:translateX(5px) rotateY(4deg);
+transform:translateX(5px) rotateY(4deg)
+}
+62.5% {
+-webkit-transform:translateX(-3px) rotateY(-2deg);
+-moz-transform:translateX(-3px) rotateY(-2deg);
+-ms-transform:translateX(-3px) rotateY(-2deg);
+-o-transform:translateX(-3px) rotateY(-2deg);
+transform:translateX(-3px) rotateY(-2deg)
+}
+87.5% {
+-webkit-transform:translateX(2px) rotateY(1deg);
+-moz-transform:translateX(2px) rotateY(1deg);
+-ms-transform:translateX(2px) rotateY(1deg);
+-o-transform:translateX(2px) rotateY(1deg);
+transform:translateX(2px) rotateY(1deg)
+}
+100% {
+-webkit-transform:translateX(0);
+-moz-transform:translateX(0);
+-ms-transform:translateX(0);
+-o-transform:translateX(0);
+transform:translateX(0)
+}
+}
+@keyframes shakeAnimation {
+0% {
+-webkit-transform:translateX(0);
+-moz-transform:translateX(0);
+-ms-transform:translateX(0);
+-o-transform:translateX(0);
+transform:translateX(0)
+}
+12.5% {
+-webkit-transform:translateX(-6px) rotateY(-5deg);
+-moz-transform:translateX(-6px) rotateY(-5deg);
+-ms-transform:translateX(-6px) rotateY(-5deg);
+-o-transform:translateX(-6px) rotateY(-5deg);
+transform:translateX(-6px) rotateY(-5deg)
+}
+37.5% {
+-webkit-transform:translateX(5px) rotateY(4deg);
+-moz-transform:translateX(5px) rotateY(4deg);
+-ms-transform:translateX(5px) rotateY(4deg);
+-o-transform:translateX(5px) rotateY(4deg);
+transform:translateX(5px) rotateY(4deg)
+}
+62.5% {
+-webkit-transform:translateX(-3px) rotateY(-2deg);
+-moz-transform:translateX(-3px) rotateY(-2deg);
+-ms-transform:translateX(-3px) rotateY(-2deg);
+-o-transform:translateX(-3px) rotateY(-2deg);
+transform:translateX(-3px) rotateY(-2deg)
+}
+87.5% {
+-webkit-transform:translateX(2px) rotateY(1deg);
+-moz-transform:translateX(2px) rotateY(1deg);
+-ms-transform:translateX(2px) rotateY(1deg);
+-o-transform:translateX(2px) rotateY(1deg);
+transform:translateX(2px) rotateY(1deg)
+}
+100% {
+-webkit-transform:translateX(0);
+-moz-transform:translateX(0);
+-ms-transform:translateX(0);
+-o-transform:translateX(0);
+transform:translateX(0)
+}
+}
+.shake {
+	-webkit-animation-duration: 400ms;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-name: shakeAnimation;
+	-moz-animation-duration: 400ms;
+	-moz-animation-timing-function: ease-in-out;
+	-moz-animation-name: shakeAnimation;
+}
+.payment_types {
+	width: 178px;
+	height: 30px;
+	background: url(../assets/images/payment_types.png) no-repeat!important;
+	background-position: 0px!important;
+	background-size: 100% auto!important;
+	margin: 20px 8px 0 -3px;
+	float: left;
+}
+.stripeLogo {
+	background: url(../assets/images/outline@2x.png) no-repeat!important;
+	background-position: 0px!important;
+	background-size: 119px 26px!important;
+	width: 119px;
+	height: 26px;
+	display: block;
+	margin: 22px auto -20px auto;
+	float: right;
+	opacity: .38;
+}
+.stripeLogo a {
+	display: block;
+	width: 119px;
+	height: 26px;
+}
+.paymentPanel .form-group input {
+	background-color: #fff;
+	box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.18);
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	margin: 0;
+}
+.paymentPanel {
+	text-align: center;
+}
+.paymentPanel.bc_loading {
+	text-align: center;
+	min-height: 330px;
+	background-color: rgba(0, 0, 0, 0)!important;
+}
+.paymentPanel h1 {
+	margin-bottom: 28px;
+    color: #fff;
+    margin-top: 20px;
+}
+.payment_holder .paymentPanel .twelve .bc_button {
+	float: right;
+	margin-top: 12px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	min-width: 134px;
+	font-size: 20px;
+	width: 100%;
+}
+.paymentPanel {
+	opacity: 0;
+	-o-transform: scale(0)!important;
+	-moz-transform: scale(0);
+	-webkit-transform: scale(0);
+	transform: scale(0)!important;
+	-moz-transition: all .8s ease-in-out;
+	-o-transition: all .8s ease-in-out;
+	-ms-transition: all .8s ease-in-out;
+	transition: all .8s ease-in-out;
+	-webkit-transition: all .8s ease-in-out;
+	width: 100%;
+	position: absolute;
+}
+.accounts_holder .paymentPanel {
+	position: relative;
+	max-height: 0px;
+	-moz-transition: none;
+	-o-transition: none;
+	-ms-transition: none;
+	transition: none;
+	-webkit-transition: none;
+	overflow: hidden;
+}
+.paymentPanel.active {
+	opacity: 1;
+	-o-transform: scale(1)!important;
+	-moz-transform: scale(1);
+	-webkit-transform: scale(1);
+	transform: scale(1)!important;
+	margin-top: 0px;
+}
+.accounts_holder .paymentPanel.active {
+	max-height: 999px;
+}
+.paymentPanel .bc_button.btn_secondary {
+	width: 100%;
+	float: right;
+	margin: 20px 0 0 0;
+}
+.row.payment-actions {
+	padding: 0 5px;
+}
+.info-panel {
+	background-color: #FFF;
+	border-radius: 2px;
+	padding: 18px 18px 12px 18px;
+	text-align: left;
+	margin-bottom: 8px;
+}
+.info-panel p {
+	color: #333;
+}
+.raised-panel {
+	background-color: rgba(0, 0, 0, 0.03);
+	border-radius: 4px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	padding: 8px 18px;
+	box-shadow: inset 0 1px 2px 0px rgba(0, 0, 0, 0.2);
+	margin: 18px 0;
+}
+.raised-panel span {
+	display: inline-block;
+	float: right;
+	width: 70%;
+}
+.paymentPanel .form-group label {
+	width: 46%;
+}
+ul.card-list {
+	margin: 38px 0 18px 0;
+}
+ul.card-list li:hover button {
+	box-shadow: none;
+}
+ul.card-list li button {
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+	font-size: 17px;
+	text-align: left;
+}
+ul.card-list li .btn_trash {
+	right: 9px;
+	top: 9px;
+}
+/* payment details in settings */
+.payment-details {
+	margin-bottom: 30px;
+}
+.payment-details .paymentPanel {
+	width: calc(100% - 50px);
+	border-bottom: 1px solid #ddd;
+}
+.payment-details .paymentPanel.saved-card {
+	border-bottom: none;
+}
+.payment-details .paymentPanel.saved-card .info-panel p {
+	text-align: left;
+}
+.payment-details .info-panel, .payment-details .form-group {
+	background-color: rgba(255, 255, 255, 0.58);
+	border-radius: 4px;
+	border: 1px solid rgba(0, 0, 0, 0.14);
+	border-bottom: 3px solid rgba(0, 0, 0, 0.18);
+}
+.paymentPanel .bc_button.btn_add {
+	float: none;
+	margin-top: 18px;
+	margin-bottom: 20px;
+	margin-left: calc(50% - 80px);
+	width: 160px;
+}
+.paymentPanel .info-panel .bc_button.btn_add, .paymentPanel .info-panel .bc_button.btn_add:hover {
+	margin-top: -55px;
+	right: 20px;
+	padding: 8px 8px 8px 40px;
+	position: absolute;
+	background-color: #fff;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.38);
+	border-top: 1px solid rgba(255, 255, 255, 0.12);
+	color: #888;
+	text-shadow: none;
+	box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.28);
+	border: 1px solid #ccc;
+	top: auto;
+}
+.paymentPanel .info-panel .bc_button.btn_add:hover {
+	color: #fff;
+	background-color: #2ba6b3;
+}
+/* Go Cardless */
+.show-lcl .btn_bank-transfer, .bc_button.btn_secondary.btn_card-payment {
+	display: none;
+}
+.show-lcl .bc_button.btn_secondary.btn_card-payment {
+	display: block;
+}
+.row .row.dd-footer {
+	border-top: 1px solid rgba(255,255,255,0.3);
+	padding: 14px 8px;
+	margin-top: 10px;
+}
+.dd-footer p {
+	text-align: left;
+	font-size: 14px;
+	opacity: 0.7;
+	color: #ccc;
+	display: block;
+	float: right;
+	text-align: right;
+}
+.dd-footer .six:first-of-type p {
+	float: left;
+	text-align: left;
+}
+.dd-footer p a {
+	font-size: 14px;
+}
+.dd-logo {
+	height: 54px;
+	width: 140px;
+	display: block;
+	background: url(../assets/images/payments.png) -250px -2px no-repeat;
+	background-size: 400px 100px;
+	float: right;
+	margin: -5px -10px 5px 80px;
+	clear: both;
+}
+.row.confirm-dd-details {
+	border-top: 1px solid #eee;
+	font-size: 16px;
+	padding: 18px 8px 0px 8px;
+}
+.row.confirm-dd-details .six {
+	padding-bottom: 8px;
+}
+.row.confirm-dd-details span {
+	font-size: 16px;
+}
+.confirm-DD .btn_edit {
+	position: relative;
+	right: -9px;
+	float: right;
+	top: -10px;
+}
+.accounts_holder .paymentPanel .bc_button.btn_secondary {
+	float: left;
+	background-color: rgba(0,0,0,0.4);
+	margin-top: 12px;
+}
+.gc-payment-on-hold {
+	padding-bottom: 90px;
+	padding-top: 30px;
+	text-align: left;
+}
+.accounts_holder .gc-payment-on-hold .bc_button {
+	margin-top: 20px;
+	float: left;
+}
+.contact_info .gc-payment-on-hold p {
+	color: #444;
+}
+.payment-details .general-error {
+	margin-top: 20px;
+}
+.gc-dd-details, .gc-payment-on-hold {
+	display: none;
+}
+.gc-dd-details.active, .gc-payment-on-hold.active {
+	display: block;
+}
+/* disabled button message */
+.disabled-message.disabled {
+	border: 1px solid rgba(255,255,255,0.14);
+	border-radius: 6px;
+	border-bottom-right-radius: 6px;
+	float: left;
+	width: 100%;
+	padding: 2px 14px 10px 14px;
+	margin: 15px 0 10px 0;
+	background-color: rgba(0,0,0,0.1);
+	cursor: no-drop;
+}
+.disabled-message .info-note {
+	display: none;
+	padding-right: 10px;
+	float: left;
+}
+.disabled-message.disabled .info-note {
+	display: block;
+}
+.disabled-message.disabled .bc_button {
+	opacity: 0.4;
+	pointer-events: none;
+}
+.confirm-account {
+	padding: 10px 0;
+}
+.payment_holder .confirm-account label {
+	color: #eee;
+	font-size: 16px;
+}
+.confirm-account .alert {
+	margin-top: 12px;
+}
+.confirm-account .alert:before {
+	left: 0px;
+}
+.payment-options ul li {
+	display: block;
+}
+.payment-options ul li button {
+	width: 100%;
+	background: rgba(255, 255, 255, 0.12);
+	border: none;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.38);
+	border-top: 1px solid rgba(255, 255, 255, 0.12);
+	text-shadow: rgba(0, 0, 0, 0.18) -1px -1px 0px;
+	border-radius: 5px;
+	margin: 0 0 18px 0;
+	padding: 18px 20px 0px 25px;
+	text-align: left;
+}
+.payment-options ul li button:hover {
+	background: rgba(255, 255, 255, 0.08);
+	border-bottom: 2px solid rgba(0, 0, 0, 0.38);
+	border-top: 1px solid rgba(255, 255, 255, 0.22);
+}
+.payment-options ul li button:before {
+	display: block;
+	content: "";
+	height: 80px;
+	width: 80px;
+	float: right;
+	margin: 0px 0px 0 20px;
+	background: url(../assets/images/svg_sprite.png) no-repeat;
+	background-size: 400px 2500px;
+	opacity: 0.4;
+}
+.payment-options ul li button:hover:before {
+	opacity: 1;
+}
+.payment-options ul li button.btn-dd:before {
+	background-position: -82px -594px;
+}
+.payment-options ul li button.btn-transfer:before {
+	background-position: -160px -594px;
+}
+.payment-options ul li button.btn-cc:before {
+	background-position: 0px -594px;
+}
+.payment-options ul li button h2 {
+	color: #fff;
+	font-size: 22px;
+	margin-bottom: 5px;
+}
+.payment-options ul li button p {
+	color: rgba(255,255,255,0.6);
+}

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en" class="no-scroll app">
+<head>
+<meta charset="UTF-8" />
+<!-- Set the viewport width to device width for mobile + disable zoom on ipad -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+<!-- For third-generation iPad with high-resolution Retina display: -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/images/favicons/apple-touch-icon-144x144-precomposed.png">
+<!-- For iPhone with high-resolution Retina display: -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/favicons/apple-touch-icon-114x114-precomposed.png">
+<!-- For first- and second-generation iPad: -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/favicons/apple-touch-icon-72x72-precomposed.png">
+<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+<link rel="apple-touch-icon-precomposed" href="assets/images/favicons/apple-touch-icon-precomposed.png">
+<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+<link rel="icon" href="assets/images/favicons/favicon.ico" type="image/x-icon" />
+<!-- for desktop -->
+
+<link rel="shortcut icon" href="assets/images/favicons/favicon.ico">
+<title>Kontainers</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+<!--CSS-->
+<link rel="stylesheet prefetch" type="text/css" href="css/app.css" />
+
+<!--JS-->
+<!--<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>-->
+<script src="js/jquery-local.js" type="text/javascript"></script>
+
+<!--TYPEAHEAD replacement-->
+<script type="text/javascript">
+$(document).ready(function() {
+    
+    function showTypeaheadResults() {
+        var Typeaheadvalue = $('#typeahead').val();
+        if (Typeaheadvalue.length >= 3) {
+            $('.typeahead-search').addClass('show-results');
+        } else {
+            $('.typeahead-search').removeClass('show-results');
+        }
+    }
+    $(function() {
+        $('#typeahead').keyup(showTypeaheadResults);
+        showTypeaheadResults();
+    });
+	
+	});
+</script>
+<!--/TYPEAHEAD replacement-->
+<style>
+/*---  just for this demo */
+.app body {
+	background-color: #fff;
+	background-image: none;
+	padding-bottom: 100px;
+}
+h1, h2 {
+	padding: 40px 0 40px 40px;
+	text-align: center;
+	background-color: #111;
+	color: #fff;
+	margin: 120px 0 0px 0;
+}
+h2 {
+	padding: 10px 0 10px 40px;
+	text-align: center;
+	background-color: #333;
+	color: #fff;
+	margin: 0px 0 120px 0;
+	font-size: 18px;
+	font-style: italic;
+}
+.step-section {
+	padding: 0 0 100px 0;
+	max-height: 100%;
+	margin-top: 0px;
+}
+.demo-box {
+	background: #145f67;
+	max-width: 800px;
+	margin: 0 auto 160px auto;
+	padding: 88px 88px 88px 88px;
+	border-radius: 8px;
+}
+</style>
+</head>
+
+<body>
+<!-- need this button or the js breaks due to my js gayness -->
+<button id="btn-quotes" style="display:none;"></button>
+<section class="step-section full-width current" > 
+  
+  <!-- BEFORE INPUT -->
+  <h1 style="margin-top:0;">BEFORE INPUT</h1>
+  <h2>Search for quote journey.</h2>
+  <div class="search-holder">
+    <div class="from-search ">
+      <div class="search-field-holder">
+        <label class="icon icon_marker" for="demo-from">From</label>
+        <input tabindex="2" type="text"  id="demo-from" placeholder="UK Address or UK Port">
+      </div>
+      <div class="search-results capped ">
+        <hr />
+        <ul>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <!-- SEARCHING FOR RESULTS -->
+  <h1>SEARCHING FOR RESULTS</h1>
+  <h2>Once 3 chars have been entered.</h2>
+  <div class="search-holder">
+    <div class="from-search">
+      <div class="search-field-holder">
+        <label class="icon icon_marker" for="demo-from">From</label>
+        <input tabindex="2" type="text" value="Mou" id="demo-from" placeholder="UK Address or UK Port">
+      </div>
+      <div class="search-results capped ">
+        <hr />
+      </div>
+      <div class="k-loading"></div>
+      <div class="no-search-results hidden">
+        <span class="icon icon_search">No Results. Try searching again.</span>
+      </div>
+    </div>
+  </div>
+  
+  <!--NO RESULTS -->
+  <h1>NO RESULTS</h1>
+  <h2>Message shown after attempt to load results</h2>
+  <div class="search-holder">
+    <div class="from-search">
+      <div class="search-field-holder">
+        <label class="icon icon_marker" for="demo-from">From</label>
+        <input tabindex="2" type="text" value="Mouss" id="demo-from" placeholder="UK Address or UK Port">
+      </div>
+      <div class="search-results capped ">
+        <hr />
+        
+          </li>
+        </div>
+        <div class="no-search-results"><span class="icon icon_search">No Results. Try searching again.</span></div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- SHOW RESULTS -->
+  <h1>STANDARD RESULTS</h1>
+  <h2>For quote journey. "search-results" has class "capped" so only 5 results show.</h2>
+  <div class="search-holder">
+    <div class="from-search show-results">
+      <div class="search-field-holder">
+        <label class="icon icon_marker" for="demo-from">From</label>
+        <input tabindex="2" type="text" value="Mountain"  id="demo-from" placeholder="UK Address or UK Port">
+      </div>
+      <div class="search-results capped ">
+        <hr />
+        <ul>
+          <li class="icon icon_marker"><a class="action-gotToQuoteSection-3"><span class="s-place">Mountain View, Stone, Arkansas</span><span class="s-region">United States of America</span></a> </li>
+          <li class="icon icon_marker"><a class="action-showAlternateLocations"><span class="s-place">Port or address we don't service currently</span><span class="s-region">United States of America</span></a> </li>
+          <li class="icon icon_port"><a><span class="s-place">Stoneville, Rockingham, North Carolina </span><span class="s-region">United States of America</span></a> </li>
+          <li class="icon icon_marker"><a><span class="s-place">Wiggins, Stone, Mississippi</span><span class="s-region">United States of America</span></a> </li>
+          <li class="icon icon_marker"><a><span class="s-place">White Stone, Spartanburg, South Carolina</span><span class="s-region">United States of America</span></a> </li>
+          <li class="icon icon_marker"><a><span class="s-place">Stone Ridge, Ulster, New York</span><span class="s-region">United States of America</span></a> </li>
+          <li class="icon icon_marker"><a><span class="s-place">Stockton, San Joaquin, California </span><span class="s-region">United States of America</span></a> </li>
+          <li class="icon icon_port"><a><span class="s-place">Stow, Summit, Ohio </span><span class="s-region">United States of America</span></a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Replace typeahead -->
+  <h1>TYPEAHEAD REPLACEMENT</h1>
+  <h2>This will replace all typeahead instances.</h2>
+  <div class="demo-box">
+    <div class="row">
+      <div class="twelve columns">
+        <div class="form-group field_description">
+          <label for="productDescription">Product Description</label>
+          
+          <!-- typeahead-search  -->
+          <div class="ember-view">
+          <div class="search-holder typeahead-search ">
+            <input tabindex="2" type="text" value="" class="typeahead" placeholder="Typeahead Search">
+            <div class="search-results">
+              <ul>
+                <li><span>Stoneville, Rockingham, North Carolina </span></li>
+                <li><span>Stoneville, Rockingham, North Carolina </span></li>
+                <li><span>Stoneville, Rockingham, North Carolina </span></li>
+                <li><span>Stoneville, Rockingham, North Carolina </span></li>
+                <li><span>Stoneville, Rockingham, North Carolina </span></li>
+                <li><span>Stoneville, Rockingham, North Carolina </span></li>
+                <li><span>Stoneville, Rockingham, North Carolina </span></li>
+                <li><span>Stoneville, Rockingham, North Carolina </span></li>
+                <li><span>Stoneville, Rockingham, North Carolina </span></li>
+                <li><span>Stoneville, Rockingham, North Carolina </span></li>
+                <li><span>Stoneville, Rockingham, North Carolina </span></li>
+                <li><span>Stoneville, Rockingham, North Carolina </span></li>
+                <li><span>Stoneville, Rockingham, North Carolina </span></li>
+                <li><span>Stoneville, Rockingham, North Carolina </span></li>
+              </ul>
+            </div>
+             <div class="k-loading hidden"></div>
+             <div class="no-search-results hidden"><span class="icon icon_search">No Results. Try searching again.</span></div>
+          </div>
+          </div>
+          <!-- /typeahead-search  --> 
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- loading state  -->  
+  <h4>Loading State</h4> 
+<div class="demo-box">
+    <div class="row">
+      <div class="twelve columns">
+        <div class="form-group field_description">
+          <label for="productDescription">Product Description</label>
+          
+          <!-- typeahead-search  -->
+          <div class="ember-view">
+          <div class="search-holder typeahead-search show-results">
+            <input tabindex="2" type="text" value="" class="typeahead" placeholder="Typeahead Search">
+            <div class="search-results">
+           
+            </div>
+             <div class="k-loading"></div>
+          </div>
+          </div>
+          <!-- /typeahead-search  --> 
+          
+        </div>
+      </div>
+    </div>
+  </div>  
+  
+  
+    <!-- no results state  --> 
+      <h4>No Results State</h4> 
+<div class="demo-box">
+    <div class="row">
+      <div class="twelve columns">
+        <div class="form-group field_description">
+          <label for="productDescription">Product Description</label>
+          
+          <!-- typeahead-search  -->
+           <div class="ember-view">
+          <div class="search-holder typeahead-search show-results">
+            <input tabindex="2" type="text" value="" class="typeahead" placeholder="Typeahead Search">
+            <div class="search-results">
+            
+            </div>
+             <div class="no-search-results"><span class="icon icon_search">No Results. Try searching again.</span></div>
+          </div>
+          </div>
+          <!-- /typeahead-search  --> 
+          
+        </div>
+      </div>
+    </div>
+  </div>    
+  
+  
+  
+  
+  
+  </div>
+</section>
+
+<!-- Event handlers for all views --> 
+<script src="js/furniture-handlers.js"></script>
+
+
+<!-- Event handlers for this view --> 
+<script src="js/quote-handlers.js"></script>
+</body>
+</html>

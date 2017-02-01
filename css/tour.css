@@ -1,0 +1,54 @@
+.tour {
+	background: #fff;
+	width: 330px;
+	padding: 38px 38px 28px 38px;
+	border-radius: 8px;
+	position: absolute;
+	margin: 5px 0 0 -100px;
+	box-shadow: 14px 14px 8px 0px rgba(0, 0, 0, 0.2);
+	background: #2ba6b3;
+	background: rgb(37,167,180); /* Old browsers */
+	background: -moz-linear-gradient(-45deg, rgba(37,167,180,1) 35%, rgba(21,130,152,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, rgba(37,167,180,1) 35%, rgba(21,130,152,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, rgba(37,167,180,1) 35%, rgba(21,130,152,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	    -webkit-transition: all 488ms cubic-bezier(.74, .01, .34, 1);
+    transition: all 488ms cubic-bezier(.74, .01, .34, 1);
+	-webkit-transform: translate(300%, 0%);
+    transform: translate(300%, 0%);
+}
+.tour.show {
+	-webkit-transform: translate(0, 0%);
+    transform: translate(0, 0%);
+	transition-delay:1s;
+
+}
+.tour h2, .tour p {
+	text-align: left;
+	color: #fff;
+}
+.tour p {
+}
+.tour:before {
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	border-left: 20px solid rgba(0, 0, 0, 0);
+	border-right: 20px solid rgba(0, 0, 0, 0);
+	border-bottom: 20px solid #2ba6b3;
+	margin-left: 100px;
+	margin-top: -58px;
+	position: absolute;
+}
+.tour .k-button.btn-confirm {
+	float: right;
+	font-size: 16px;
+	padding: 8px 18px 8px 18px;
+	background-color: rgba(0, 0, 0, 0);
+	border: 2px solid rgba(255,255,255,0.7);
+	box-shadow: 0 2px 0 -0.5px rgba(0,0,0,0.3);
+	color: #fff;
+}
+.tour .k-button.btn-confirm:hover {
+	box-shadow: none;
+}

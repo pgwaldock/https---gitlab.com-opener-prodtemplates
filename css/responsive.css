@@ -1,0 +1,855 @@
+
+/* ---------------------------------------------------------------------------------------- */
+/* --------------------------------------  larger than mobile  ---------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+@media (min-width: 945px) {
+/* --------------------------------------  navigation  ------------------------------------------ */
+	
+.module-steps li.small.active {
+	max-height: 52px;
+}
+.small .btn-module {
+	padding: 14px 14px 0px 18px;
+	min-height: 52px;
+}
+.small .btn-module p {
+	display: inline-block;
+	float: right;
+	margin-top: 1px;
+}
+/* hide module nav icons*/
+.module-nav h2.icon:before {
+	display: none;
+}
+.module-nav h2.icon.icon_quotes:before {
+	display: inline-block;
+}
+}
+
+/* ---------------------------------------------------------------------------------------- */
+/* --------------------------------------  ipad  ------------------------------------------ */
+/* ---------------------------------------------------------------------------------------- */
+
+@media (max-device-width: 1024px) {
+/*-------- buttons -------*/
+.k-button {
+	/* prevent bold effect on ipad*/
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+/*-------- navigation -------*/
+.btn-module {
+	/* prevent bold effect on ipad*/
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+/* make nav scroll and shunt over to hide scrollbar*/
+.module-nav.show-module-nav.overflowing {
+	width: 262px;
+}
+/* fix for safari ipad- even though the scrollbar is ou of view it still jolts the nav to the side*/
+.module-nav.show-module-nav.overflowing::-webkit-scrollbar {
+ display: none;
+}
+/* hide modal scroll bars*/
+.k-modal::-webkit-scrollbar {
+ display: none;
+}
+/*override width change on non-ipad to 265 to allow forscrollbar*/
+.module-nav.show-module-nav.overflowing {
+	overflow-y: auto;
+	width: 250px;
+}
+/*-------- search -------*/
+
+/* prevent slide inanimation of result li's */
+.search-results ul li {
+	margin: 0px;
+}
+}
+
+@media (max-width: 1024px) {
+/*-------- base.css -------*/
+p {
+	font-size: 17px;
+}
+/*-------- app.css -------*/
+.home-screen h1 {
+	font-size: 45px;
+}
+/*-------- typography -------*/
+
+
+	
+	
+/*-------- buttons -------*/
+.big-button {
+	height: 210px;
+	font-size: 17px;
+	padding-top: 140px;
+	background-size: 208px auto;
+	min-width: 250px;
+}
+.btn-uk, .btn-usa {
+	padding-top: 162px;
+}
+.home-screen .k-button {
+	font-size: 18px;
+}
+/*.k-button {
+	display: inline-block;
+	width: auto;
+	line-height: 1;
+	margin: 8px 5px;
+	outline: none;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 5px;
+	border: none;
+	padding: 10px 18px 10px 18px;
+	text-transform: auto;
+	font: 18px "bclever_font_medium", tahoma, sans-serif;
+	height: auto;
+	-webkit-transition: none;
+	transition: none;
+	background: #fff;
+	box-shadow: 0 3px 0 -0.5px rgba(0,0,0,0.5);
+	color: #333;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-bottom: none;
+	text-transform: capitalize;
+	-webkit-transform: translate3d(0, 0, 0);
+}*/
+/* --------------------------------------------quotes.css------------------------------------- */
+.q-cta {
+	padding: 8px 4px 8px 8px;
+}
+.q-cta .k-button.cta {
+	margin: 0px 4px 2px 0;
+}
+.q-carrier, .q-depart, .q-duration, .q-arrive {
+	padding: 17px 4px 0px 4px;
+}
+.carrier-name {
+	padding-left: 10px;
+}
+.quote-labels .q-carrier span {
+	margin-left: 10px;
+}
+.q-total {
+	padding-top: 8px;
+}
+}
+
+/* -------------------------------------------------------------------------------------------- */
+/* -------------------------------BREAK POINT - width 1200px----------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+
+@media (max-width: 1200px) {
+/* --------------------------------------------search.css------------------------------------- */
+.search-holder {
+	max-width: 648px;
+}
+.search-field-holder input[type="text"] {
+	font-size: 45px;
+}
+/* --------------------------------------------quotes.css------------------------------------- */
+.q-carrier {
+	min-width: 0px;
+}
+.carrier-name, .quote-labels .q-carrier span {
+	padding-left: 10px
+}
+}
+
+/* -------------------------------------------------------------------------------------------- */
+/* --------------------------------------LARGE MOBILE------------------------------------------ */
+/* -------------------------------------------------------------------------------------------- */
+
+@media (max-width: 945px) {
+/* --------------------------------------------normalize.css------------------------------------- */
+/* --------------------------------------------base.css------------------------------------------ */
+/* --------------------------------------------typography.css------------------------------------ */
+/* --------------------------------------------grid.css------------------------------------------ */
+/* --------------------------------------------errors.css---------------------------------------- */
+/* --------------------------------------------icons.css----------------------------------------- */
+.hero h1 {
+    margin-top: 0px;
+}
+/* --------------------------------------------buttons.css--------------------------------------- */
+
+.k-modal {
+	padding: 20px 20px;
+}
+.big-button {
+	border: 1px solid rgba(140,140,140,0.3);
+}
+/* --------------------------------------------framework.css------------------------------------------- */
+.app body {
+	background-position: 30%;
+}
+.intercom-launcher-button {
+	bottom: 100px;
+}
+.home-screen {
+	/*prevents webkit blur on GPU accerated elements -breaks safari
+	-webkit-filter: blur(0);*/
+	text-align: center;
+	margin-top: 30px;
+}
+.home-screen h1 {
+	font-size: 38px;
+	margin: 0px 0 20px 0;
+}
+.home-screen p {
+	font-size: 18px;
+}
+.multi-question {
+	padding-bottom: 18px;
+	margin: 30px auto -20px auto;
+	max-width: 400px;
+}
+.multi-question .big-button.boole {
+	max-width: 110px;
+	margin: 8px;
+}
+.multi-answer {
+	width: 100%;
+	text-align: center;
+}
+.multi-question p {
+	width: 100%;
+	text-align: center;
+	padding: 28px 48px 0px 48px;
+	min-height: 0px;
+	font-size: 18px;
+}
+/* --------------------------------------------search.css------------------------------------- */
+.show-results .search-results {
+	height: 530px;
+}
+.search-field-holder label {
+	font-size: 24px;
+}
+.focus-panel.show-results .search-field-holder label {
+	font-size: 28px;
+}
+.search-holder.show-results .search-field-holder input[type="text"] {
+	font-size: 26px;
+}
+.focus-panel.show-results .search-results {
+	height: 690px;
+}
+.search-results ul li a {
+	padding-left: 50px;
+	padding-bottom: 44px;
+}
+.search-results ul li a span {
+	max-width: 100%;
+	display: block;
+}
+.search-results ul li a span.s-region {
+	max-width: 100%;
+	float: left;
+	padding-left: 0px;
+}
+.search-filters-holder {
+	padding-left: 0px;
+}
+.search-filters label {
+	font-size: 15px;
+}
+.search-filters-holder .chk-holder {
+	margin: 0 12px 0 12px;
+}
+/* --------------------------------------------navigation.css------------------------------------------- */
+.main-nav-bar .logo {
+	margin-left: -5px;
+}
+.module-nav {
+	border-left: none;
+	border-top: 1px solid black;
+	position: absolute;
+	height: 80px;
+	width: 100%;
+	-webkit-transition: all 1188ms ease;
+	transition: all 1188ms ease;
+	bottom: 0px;
+	top: auto;
+	right: 0;
+	padding-right: 0;
+	-webkit-transform: translate(0, 100px);
+	transform: translate(0, 100px);
+}
+.module-nav.show-module-nav {
+	-webkit-transform: translate(0, 0px);
+	transform: translate(0, 0px);
+}
+.module-nav.show-module-nav.overflowing {
+	overflow-y: hidden;
+	overflow-x: auto;
+	width: 100%;
+	right: 0;
+	padding-right: 0px;
+}
+/* fix for safari ipad- even though the scrollbar is ou of view it still jolts the nav to the side*/
+.module-nav.show-module-nav.overflowing::-webkit-scrollbar {
+ display: none;
+}
+.module-steps {
+	-webkit-transform: translate(-50%, 0%);
+	transform: translate(-50%, 0%);
+	position: absolute;
+	max-width: 100%;
+	overflow: hidden;
+	overflow-x: auto;
+	left: 50%;
+	top: -1px;
+	white-space: nowrap;
+	width: auto;
+	padding-right: 12px;
+}
+.module-nav.show-module-nav .module-steps {
+	-webkit-transform: translate(-50%, 0%);
+	transform: translate(-50%, 0%);
+}
+.module-steps li {
+	-webkit-transform: translate(0px, 1000px);
+	transform: translate(0px, 1000px);
+	display: inline-block;
+	max-width: 0;
+	max-height: auto;
+}
+.module-steps li.active {
+	-webkit-transform: translate(0px, 0);
+	transform: translate(0px, 0);
+	max-width: 74px;
+	margin-bottom: 0;
+	padding-left: 10px;
+}
+.module-nav.show-module-nav.overflowing .module-steps li {
+	-webkit-transform: translate(0px, 0);
+	transform: translate(0px, 0);
+}
+.module-steps li.active.with-map {
+	max-height: auto;
+}
+.mini-map {
+	display: none;
+}
+.btn-module, .quotes-button .btn-module {
+	text-align: center;
+	padding: 14px 18px 2px 18px;
+}
+.btn-module h2.icon:before, .btn-module h2.icon.icon_marker.to_marker:before {
+	font-size: 28px;
+}
+.btn-module h2 {
+	overflow: hidden;
+	text-overflow: initial;
+	margin: 0 0 8px 0px;
+	display: none;
+}
+.btn-module .container-item {
+	display: none;
+	border: none;
+}
+.btn-module.container {
+	padding: 8px 18px 7px 18px;
+}
+.btn-module .container-item h2 {
+	opacity: 0;
+}
+.btn-module h2:first-of-type, .btn-module.container .container-item:first-of-type {
+	display: block;
+}
+.btn-module p {
+	display: none;
+}
+.focus-panel section {
+	margin-top: -7px;
+	margin-left: 0px;
+	width: 100%;
+	max-height: calc(100% - 148px);
+	padding: 18px 10px;
+}
+.focus-panel section.quote-results {
+	margin-top: 25px;
+	max-height: calc(100% - 200px);
+}
+.step-section.full-width {
+	max-height: calc(100% - 68px);
+	margin-top: 33px;
+}
+.k-nav-bar {
+	height: auto;
+	width: 100%;
+	padding-left: 0px;
+	border-bottom-right-radius: 0px;
+	right: 0;
+}
+.k-nav-bar.open-nav {
+	border-radius: 0;
+	padding-bottom: 1px;
+}
+.k-nav-bar .nav ul {
+	width: 100%;
+	margin-top: 20px;
+	max-height: 0;
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, 0.88);
+	-webkit-transition: max-height .8s cubic-bezier(0, 1, 0, 1) -.2s;
+	transition: max-height .8s cubic-bezier(0, 1, 0, 1) -.2s;
+}
+.k-nav-bar.open-nav .nav ul {
+	max-height: 9999px;
+	-webkit-transition: all 2.4s ease-in-out;
+	transition: all 2.4s ease-in-out;
+}
+.k-nav-bar .nav ul li {
+	float: left;
+	width: 100%;
+}
+.k-nav-bar .nav ul li .k-button {
+	float: left;
+	width: 100%;
+	text-align: left;
+	padding: 18px 18px 18px 22px;
+	margin: 0;
+	border-top: 1px solid rgba(255,255,255,0.1);
+}
+.k-nav-bar .nav ul li .k-button:hover {
+	background-color: rgba(0, 0, 0, 0.88);
+}
+/* hamburger button animate to close*/
+.k-nav-toggle {
+	cursor: pointer;
+	padding: 10px 35px 16px 0px;
+	display: block;
+	margin: 10px 14px 0 0px;
+	float: right;
+}
+.k-nav-toggle span, .k-nav-toggle span:before, .k-nav-toggle span:after {
+	cursor: pointer;
+	border-radius: 1px;
+	height: 3px;
+	width: 25px;
+	background: white;
+	position: absolute;
+	display: block;
+	content: '';
+}
+.k-nav-toggle span:before {
+	top: -8px;
+}
+.k-nav-toggle span:after {
+	bottom: -8px;
+}
+.k-nav-toggle span, .k-nav-toggle span:before, .k-nav-toggle span:after {
+	transition: all 500ms ease-in-out;
+	-webkit-transition: all 500ms ease-in-out;
+}
+.k-nav-toggle.close-icon span {
+	background-color: transparent;
+}
+.k-nav-toggle.close-icon span:before, .k-nav-toggle.close-icon span:after {
+	top: 0;
+}
+.k-nav-toggle.close-icon span:before {
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.k-nav-toggle.close-icon span:after {
+	-webkit-transform: translateY(-8px) rotate(-45deg);
+	transform: translateY(-8px) rotate(-45deg);
+	top: 8px;
+}
+.btn-module i.icon:before, .no-results-message {
+	display: none;
+}
+/* --------------------------------------------container-selector.css------------------------------------- */
+.container-buttons {
+	height: auto;
+	margin-bottom: 0;
+}
+.container-selector.open .big-button.active-tab {
+	padding-bottom: 18px;
+	margin: 8px 8px 18px 8px;
+}
+.open .container-properties {
+	padding: 28px 28px 20px 28px;
+	height: auto;
+}
+.container-properties .row .seven, .container-properties .row .five {
+	width: 100%;
+}
+.container-properties .form-group {
+	display: block;
+	width: 100%;
+}
+.container-properties .form-group label {
+	display: block;
+	margin: 0px 15px 30px 5px;
+}
+.number-holder {
+	width: 100%;
+}
+.k-form-group.field-quantity {
+	display: block;
+}
+.k-form-group.field-quantity label {
+	text-align: center;
+	display: block;
+	margin: 0px 15px 28px 5px;
+}
+.container-inputs .k-button {
+	width: 100%;
+	margin: 8px 0px 8px 0;
+	font-size: 20px;
+}
+.btn-number-change {
+	padding: 0 24px;
+}
+.container-heading .container-image {
+	width: 140px;
+	height: 80px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.container-heading h2 {
+	display: block;
+	font-size: 24px;
+	top: 14px;
+}
+.container-heading h2 span {
+	position: relative;
+}
+.container-inputs .k-button.simple {
+	font-size: 17px;
+	margin: 15px 0px 0px 0px;
+	padding: 4px 0;
+}
+.container-complete.show {
+	margin-bottom: -100px;
+	z-index: 9999;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 20px;
+	height: 230px;
+	border-radius: 8px;
+	background-color: #38454a;
+	background-image: -webkit-linear-gradient(bottom, #475f68 1%, #38454a 100%);
+}
+.container-complete .k-button {
+	width: 100%;
+	margin: 28px 0px 0px 0px;
+	float: none;
+}
+.btn-module .container-image {
+	width: 45px;
+	height: 32px;
+	display: none;
+	right: -4px;
+}
+.btn-module .container-image:first-of-type {
+	display: block;
+}
+.lcl-module .row .five, .lcl-module .row .six {
+	width: 100%;
+}
+.lcl-module .row .offset-one {
+	margin-left: 0%;
+	padding-top: 15px;
+}
+.lcl-module p {
+	margin: 28px 0 18px 0;
+}
+.lcl-module .k-button.simple.icon_trash {
+	max-width: 70px;
+	overflow: hidden;
+	max-height: 50px;
+	line-height: 40px;
+	margin-top: -80px;
+	margin-right: -28px;
+}
+.container-selector .big-button {
+	background-image: none;
+	min-width: 20px;
+	max-width: calc(33% - 5px);
+	padding-top: 16px;
+	padding-bottom: 22px;
+	margin: 0 0 -10px 0!important;
+}
+.container-selector .big-button, .container-selector.open .big-button {
+	font-size: 14px;
+}
+.container-properties .alert {
+	margin-top: -12px;
+	position: relative;
+	margin-left: calc(50% - 137px);
+	width: 280px;
+}
+.container-properties .alert:before {
+	left: calc(50% - 18px);
+}
+ul.container-list li p {
+	max-width: calc(100% - 150px);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+ul.container-list li .k-button.simple {
+	max-width: 40px;
+	overflow: hidden;
+	height: 35px;
+	margin-right: 8px;
+}
+.lcl-load.show {
+	max-height: 760px;
+}
+.lcl-totals {
+	width: 100%;
+}
+.lcl-totals.show {
+	max-height: 200px;
+}
+.lcl-totals .four.weight-col, .lcl-totals .four.vol-col {
+	padding: 4px 0;
+}
+/* --------------------------------------------quotes.css------------------------------------- */
+.quote-tools {
+	padding: 2px 16px;
+	width: 100%;
+}
+.quote-order span, .quote-tools .k-button.btn-make-offer {
+	display: none;
+}
+.quote-actions button.icon:before {
+	margin: 3px 10px 50px 0;
+}
+.quote-tools .k-button.icon_reference {
+	width: 40px;
+	overflow: hidden;
+	height: 37px;
+	margin-left: -5px;
+}
+.action-callout .btn_close {
+	top: 20px;
+	right: 13px;
+}
+.quote-order {
+	float: right;
+	margin-right: -15px;
+}
+.quote-tools .k-button {
+	margin: 6px 6px 8px 0px;
+}
+.quote-tools-holder h1 {
+	float: left;
+	font-size: 24px;
+	margin: 9px 0 0 0px;
+}
+.quote-results {
+	padding-top: 80px;
+}
+.q_month {
+	display: block;
+}
+.q-total {
+	padding: 7px 0 6px 0;
+}
+.results-holder {
+	padding-top: 0px;
+}
+.q-cta .order-expiry {
+	margin: -10px -10px 12px -10px;
+	float: right;
+	border-bottom-left-radius: 4px;
+}
+/* --------------------------------------------notifications.css------------------------------------- */
+.cookie-message {
+	display: none;
+}
+/* --------------------------------------------external------------------------------------- */
+#intercom-container .intercom-launcher, .intercom-launcher {
+	bottom: auto!important;
+	top: 9px;
+	right: 70px!important;
+}
+}
+
+/* -------------------------------------------------------------------------------------------- */
+/* -----------------------------Break point---------700px width------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+
+@media (max-width: 700px) {
+/* --------------------------------------------quotes.css------------------------------------- */
+.q-duration, .dash_holder .q-depart, .dash_holder .q-arrive {
+	display: none;
+}
+.carrier-name {
+	max-width: 100px;
+	padding-left: 8px;
+}
+.q-carrier {
+	min-width: 100px;
+}
+}
+
+/* -------------------------------------------------------------------------------------------- */
+/* -----------------------------Break point---------570px width------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+
+@media (max-width: 570px) {
+/* --------------------------------------------quotes.css------------------------------------- */
+.q-carrier {
+	display: none;
+}
+}
+
+/* -------------------------------------------------------------------------------------------- */
+/* -----------------------------Break point---------466px width------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+
+@media (max-width: 466px) {
+/* --------------------------------------------buttons.css------------------------------------- */	
+.home-screen .k-button {
+	width: 100%;
+}
+/* --------------------------------------------quotes.css------------------------------------- */
+.q-total .k-button.simple {
+	margin: -6px -6px 0 0;
+}
+.q-cta .k-button.cta {
+	margin: 2px 2px 0px 0;
+	padding: 2px 10px 2px 16px;
+	font-size: 20px;
+	width: 100%;
+}
+.q-cta, .q-cta-label {
+	min-width: 130px;
+}
+.show-breakdown .q-cta, .show-breakdown .q-cta-label {
+	min-width: 235px;
+}
+.q-total {
+	margin: -14px 0 3px 0px;
+	width: 100%;
+	padding: 12px 0 0px 0;
+}
+.q_month {
+	margin-top: -8px;
+}
+}
+
+/* -------------------------------------------------------------------------------------------- */
+/* -----------------------------SMALL MOBILE---------380px width------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+
+@media (max-width: 380px) {
+.country-selected {
+	display: none;
+}
+/* --------------------------------------------search.css------------------------------------- */
+.show-results .search-results.capped {
+	max-height: 460px;
+}
+.search-field-holder label {
+	font-size: 20px;
+}
+.show-results .search-field-holder label {
+	font-size: 18px;
+	margin-top: 0px;
+}
+.focus-panel.show-results .search-field-holder label {
+	font-size: 16px;
+}
+.search-field-holder input[type="text"] {
+	font-size: 35px;
+}
+.show-results .search-field-holder input[type="text"] {
+	font-size: 18px;
+}
+/* --------------------------------------------buttons.css------------------------------------- */
+.big-button {
+	min-width: 235px;
+	background-size: 108px auto;
+	padding-top: 75px;
+	height: 130px;
+	margin-bottom: 8px;
+	font-size: 18px;
+	background-position: 50% 15px;
+}
+.btn-uk, .btn-usa {
+	padding-top: 85px;
+}
+.big-button.boole.icon:before {
+	font-size: 38px;
+}
+.big-button.boole {
+	height: 135px;
+}
+/* --------------------------------------------app.css------------------------------------- */
+.home-screen h1 {
+	font-size: 28px;
+}
+.home-screen p {
+	padding-bottom: 0px;
+}
+.step-section h1 {
+	margin-bottom: 10px;
+	font-size: 22px;
+}
+/* --------------------------------------------app.css------------------------------------- */
+.k-modal h1 {
+	font-size: 24px;
+}
+.k-modal p {
+	margin-top: 20px;
+	font-size: 14px;
+}
+/* --------------------------------------------container-selector.css------------------------------------- */
+.big-button span.big-text {
+	font-size: 24px;
+	color: #333;
+	display: block;
+}
+}
+
+/* --------------------------------------------olark mobile------------------------------------- */
+@media screen and (max-width: 700px) {
+#habla_window_div {
+	position: fixed;
+	margin: 0;
+	width: 100%!important;
+	height: 100%;
+}
+#habla_window_div #habla_chatform_form {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: auto;
+	width: 83%;
+	width: calc(100% - 50px);
+	margin: 0px 0px 10px 15px;
+}
+.olrk-state-expanded #habla_window_div {
+	position: fixed;
+    margin: 0!important;
+    width: 100%!important;
+	height: 100%!important;
+	background-color: #fff!important;
+}
+#habla_window_div #habla_chatform_form {
+    position: fixed!important;
+    bottom: 0!important;
+    left: 0!important;
+    right: auto!important;
+    width: 83%!important;
+    width: calc(100% - 50px)!important;
+    margin: 0px 0px 10px 15px!important;
+}
+}

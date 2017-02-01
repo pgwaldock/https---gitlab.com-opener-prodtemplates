@@ -1,0 +1,26 @@
+.country-selected {
+	display: inline-block;
+	background-size: 48px auto;
+	background-repeat: no-repeat;
+	background-position: 0px 2px;
+	margin: 0px 0 0 10px;
+	position: relative;
+	width: 48px;
+	height: 33px;
+	z-index: 1;
+}
+.country-selected:hover {
+	cursor: pointer;
+}
+.country-selected.uk {
+	background-image: url(../assets/images/flag-uk.png);
+}
+.country-selected.usa {
+	background-image: url(../assets/images/flag-usa.png);
+}
+.country-selected a {
+	color: #fff;
+}
+.k-modal.country-selector h1 {
+	margin-bottom: 30px;
+}
